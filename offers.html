@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ARBLG | Offers & Promotions</title>
+
+    <link rel="stylesheet" href="offers.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+   <!-- Header Logo -->
+<a href="index.html" class="logo">
+    <div class="logo-star">✦</div>
+    <div class="logo-name">ARBLG</div>
+    <div class="logo-sub">HOTEL &amp; RESORT</div>
+</div>
+
+    
+
+    <nav class="nav-links">
+        <a href="index.html">DESTINATIONS</a>
+        <a href="hotels.html">HOTELS</a>
+        <a href="experience.html">EXPERIENCES</a>
+        <a href="offers.html" class="active">OFFERS</a>
+        <a href="membership.html">MEMBERSHIPS⌄</a>
+        <div class="more-menu">
+
+    <button class="more-btn" id="moreBtn">
+        MORE <span>⌃</span>
+    </button>
+
+    <div class="more-mega" id="moreMega">
+
+        <!-- LEFT GOLD BOX -->
+        <div class="more-offer">
+
+            <h2>BOOK DIRECT OFFERS</h2>
+
+            <p>
+                Exclusive offers and special promotions
+            </p>
+
+            <a href="offers.html">
+                MORE ›
+            </a>
+
+        </div>
+
+
+        <!-- MIDDLE LINKS -->
+        <div class="more-column">
+
+            <a href="dining.html">DINING</a>
+
+            <a href="meetings.html">
+                MEETINGS AND CONFERENCES
+            </a>
+
+            <a href="weddings.html">
+                TIMELESS WEDDINGS
+            </a>
+
+            <a href="holidays.html">
+                ARBLG HOLIDAYS
+            </a>
+
+            <a href="safaris.html">
+                ARBLG SAFARIS
+            </a>
+
+            <a href="wellness.html">
+                WELLNESS
+            </a>
+
+            <a href="gifting.html">
+                GIFTING
+            </a>
+
+        </div>
+
+
+        <!-- RIGHT LINKS -->
+        <div class="more-column">
+
+            <a href="business.html">
+                BUSINESS USERS
+            </a>
+
+            <a href="about.html">
+                ABOUT ARBLG
+            </a>
+
+            <a href="she-remains.html">
+                SHE REMAINS THE ARBLG
+            </a>
+
+            <a href="sky-view.html">
+                ARBLG SKY VIEW RESIDENCES
+            </a>
+
+            <a href="travel-stories.html">
+                TRAVEL STORIES
+            </a>
+
+            <a href="contact.html">
+                CONTACT US
+            </a>
+
+            <a href="manage-booking.html" class="manage-booking">
+                <span>›</span>
+                MANAGE YOUR BOOKING
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+    </nav>
+
+    <div class="nav-right">
+        <a href="login.html" class="login">LOGIN / JOIN</a>
+
+       <!-- RIGHT SIDE -->
+
+    <button class="book-btn" id="bookStayBtn">
+        BOOK A STAY
+    </button>
+
+</div>
+
+</header>
+
+
+<!-- ================= BOOK A STAY PANEL ================= -->
+
+<div class="booking-panel" id="bookingPanel">
+
+    <!-- TOP -->
+    <div class="booking-top">
+        <button id="closeBooking">
+            CLOSE ✕
+        </button>
+    </div>
+
+
+    <!-- CONTENT -->
+    <div class="booking-content">
+
+        <!-- HOTEL SEARCH -->
+        <div class="hotel-search">
+            <span>⌕</span>
+
+            <input
+                type="text"
+                id="hotelInput"
+                placeholder="Find a Hotel or Destination"
+            >
+        </div>
+
+
+        <!-- DATES -->
+        <div class="date-row">
+
+            <div>
+                <label>CHECK-IN</label>
+
+                <input
+                    type="date"
+                    id="checkIn"
+                >
+            </div>
+
+            <span>—</span>
+
+            <div>
+                <label>CHECK-OUT</label>
+
+                <input
+                    type="date"
+                    id="checkOut"
+                >
+            </div>
+
+        </div>
+
+
+        <!-- ROOMS LABEL -->
+        <div class="rooms-label">
+            ROOMS &amp; GUESTS
+        </div>
+
+
+        <!-- ROOM SUMMARY -->
+        <div class="rooms-guests">
+
+            <span>♧</span>
+
+            <span>
+                <b id="adultCountText">1</b> Adult,
+                <b id="childCountText">0</b> Child -
+                <b id="roomCountText">1</b> Room
+            </span>
+
+            <span>⌃</span>
+
+        </div>
+
+
+        <!-- ROOM 1 -->
+        <h3 class="room-title">
+            Room 1
+        </h3>
+
+
+        <!-- GUEST BOX -->
+        <div class="guest-box">
+
+            <!-- ADULT -->
+            <div class="guest-item">
+
+                <button id="adultMinus">
+                    −
+                </button>
+
+                <span>
+                    <b id="adultCount">1</b>
+                    Adult
+                </span>
+
+                <button id="adultPlus">
+                    +
+                </button>
+
+            </div>
+
+
+            <div class="divider"></div>
+
+
+            <!-- CHILD -->
+            <div class="guest-item">
+
+                <button id="childMinus">
+                    −
+                </button>
+
+                <span>
+                    <b id="childCount">0</b>
+                    Child
+                    <small>(0 - 12 yrs)</small>
+                </span>
+
+                <button id="childPlus">
+                    +
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ADD ROOM -->
+        <button class="add-room" id="addRoom">
+            ADD MORE ROOMS
+        </button>
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <div class="booking-footer">
+
+
+        <!-- SPECIAL CODE -->
+        <div class="special-code" id="specialCode">
+
+            <span>
+                Special Code
+            </span>
+
+            <span>
+                ⌃
+            </span>
+
+
+            <div
+                class="special-dropdown"
+                id="specialDropdown"
+            >
+
+                <div
+                    class="special-option selected"
+                    data-value="None"
+                >
+                    ✓ &nbsp;&nbsp; None
+                </div>
+
+                <div
+                    class="special-option"
+                    data-value="Corporate Access Code"
+                >
+                    Corporate Access Code
+                </div>
+
+                <div
+                    class="special-option"
+                    data-value="Travel Agency Code"
+                >
+                    Travel Agency Code
+                </div>
+
+                <div
+                    class="special-option"
+                    data-value="Business Connect Code"
+                >
+                    Business Connect Code
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CHECK RATES -->
+        <button
+            class="check-rates"
+            id="checkRatesBtn"
+        >
+            CHECK RATES
+        </button>
+
+    </div>
+
+</div>
+
+
+
+
+<!-- ================= HERO ================= -->
+
+<section class="offers-hero">
+
+    <img
+        src="https://images.unsplash.com/photo-1504150558240-0b4fd8946624?auto=format&fit=crop&w=2200&q=90"
+        alt="Luxury Travel"
+        class="hero-image"
+    >
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-title">
+        <span></span>
+
+        <div>
+            OFFERS<br>
+            &amp; PROMOTIONS
+        </div>
+    </div>
+
+</section>
+
+
+<!-- ================= MEMBER RATES ================= -->
+
+<section class="offers-section">
+
+    <div class="section-heading">
+        <span></span>
+        <h1>ARBLG INNERCIRCLE<br>MEMBER RATES</h1>
+        <span></span>
+    </div>
+
+
+    <div class="offers-grid" id="memberOffers">
+
+        <!-- CARD 1 -->
+
+        <article class="offer-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85"
+                alt="Luxury Palace"
+            >
+
+            <div class="offer-content">
+
+                <h2>FESTIVALS OF INDIA</h2>
+
+                <p>
+                    Begin the festive season with a stay filled with warmth,
+                    joy and splendour. Come together over cherished traditions
+                    and memorable moments, beautifully...
+                </p>
+
+                <div class="validity">
+                    Validity:
+                    <strong>10 Sep 2026 - 10 Nov 2026</strong>
+                </div>
+
+                <div class="card-actions">
+                    <button>LOGIN / JOIN</button>
+                    <a href="#">KNOW MORE ›</a>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- CARD 2 -->
+
+        <article class="offer-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1200&q=85"
+                alt="Tropical Escape"
+            >
+
+            <div class="offer-content">
+
+                <h2>ARBLG HOLIDAYS – INTERNATIONAL ESCAPES</h2>
+
+                <p>
+                    From sunlit coastlines to storied cities, every
+                    international escape carries a rhythm of its own.
+                    Step into vibrant landscapes, liv...
+                </p>
+
+                <div class="validity">
+                    Validity:
+                    <strong>Till 31 Oct 2026</strong>
+                </div>
+
+                <div class="card-actions">
+                    <button>LOGIN / JOIN</button>
+                    <a href="#">KNOW MORE ›</a>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- CARD 3 -->
+
+        <article class="offer-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=85"
+                alt="Luxury Suite"
+            >
+
+            <div class="offer-content">
+
+                <h2>SUITE SURPRISES - MEMBER ONLY</h2>
+
+                <p>
+                    Indulge in a stay that goes beyond the ordinary and
+                    experience enhanced comfort, added space, thoughtful
+                    touches and unparalleled extravagance...
+                </p>
+
+                <div class="validity">
+                    Validity:
+                    <strong>Round the Year</strong>
+                </div>
+
+                <div class="card-actions">
+                    <button>LOGIN / JOIN</button>
+                    <a href="#">KNOW MORE ›</a>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- CARD 4 -->
+
+        <article class="offer-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&w=1200&q=85"
+                alt="Breakfast Experience"
+            >
+
+            <div class="offer-content">
+
+                <h2>ARBLG CLUB - BREAKFAST &amp; COCKTAIL HOURS INCLUSIVE</h2>
+
+                <p>
+                    Designed around your pace, these are spaces that move
+                    effortlessly between focus and ease, setting the tone
+                    from the moment your day begins...
+                </p>
+
+                <div class="validity">
+                    Validity:
+                    <strong>Round the Year</strong>
+                </div>
+
+                <div class="card-actions">
+                    <button>LOGIN / JOIN</button>
+                    <a href="#">KNOW MORE ›</a>
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+
+    <button class="load-more" id="loadMore">
+        LOAD MORE <span>⌄</span>
+    </button>
+
+</section>
+
+
+<!-- ================= EXCLUSIVE OFFERS ================= -->
+
+<section class="offers-section exclusive">
+
+    <div class="section-heading">
+
+        <span></span>
+
+        <h1>EXCLUSIVE OFFERS</h1>
+
+        <span></span>
+
+    </div>
+
+
+    <div class="offers-grid">
+
+        <!-- CARD 5 -->
+
+        <article class="offer-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1572331165267-854da2b10ccc?auto=format&fit=crop&w=1200&q=85"
+                alt="Pool Staycation"
+            >
+
+            <div class="offer-content">
+
+                <h2>PERFECT STAYCATIONS</h2>
+
+                <p>
+                    Retreat into our tranquil urban havens and indulge
+                    in an unforgettable staycation that combines the
+                    best of experiences...
+                </p>
+
+                <div class="validity">
+                    Validity:
+                    <strong>Round the Year</strong>
+                </div>
+
+                <div class="card-actions">
+                    <button>BOOK NOW</button>
+                    <a href="#">KNOW MORE ›</a>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- CARD 6 -->
+
+        <article class="offer-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=85"
+                alt="Spiritual Experience"
+            >
+
+            <div class="offer-content">
+
+                <h2>SOULFUL ABODES</h2>
+
+                <p>
+                    Reconnect with your spirit, awaken inner wisdom,
+                    and embrace a deeper sense of peace with soulful
+                    experiences...
+                </p>
+
+                <div class="validity">
+                    Validity:
+                    <strong>Round the Year</strong>
+                </div>
+
+                <div class="card-actions">
+                    <button>BOOK NOW</button>
+                    <a href="#">KNOW MORE ›</a>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- CARD 7 -->
+
+        <article class="offer-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=1200&q=85"
+                alt="Luxury Bedroom"
+            >
+
+            <div class="offer-content">
+
+                <h2>STAY A BIT LONGER - BREAKFAST INCLUSIVE</h2>
+
+                <p>
+                    Embark on an unforgettable journey with our exclusive
+                    stay package designed to reward those who choose to
+                    extend their stay...
+                </p>
+
+                <div class="validity">
+                    Validity:
+                    <strong>Round the Year</strong>
+                </div>
+
+                <div class="card-actions">
+                    <button>BOOK NOW</button>
+                    <a href="#">KNOW MORE ›</a>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- CARD 8 -->
+
+        <article class="offer-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1602002418082-a4443e081dd1?auto=format&fit=crop&w=1200&q=85"
+                alt="Private Resort"
+            >
+
+            <div class="offer-content">
+
+                <h2>ARBLG HOLIDAYS</h2>
+
+                <p>
+                    Each ARBLG holiday is crafted with impeccable detail
+                    for you and your loved ones. Delve into exotic
+                    international getaways...
+                </p>
+
+                <div class="validity">
+                    Validity:
+                    <strong>Round the Year</strong>
+                </div>
+
+                <div class="card-actions">
+                    <button>BOOK NOW</button>
+                    <a href="#">KNOW MORE ›</a>
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+
+    <button class="load-more">
+        LOAD MORE <span>⌄</span>
+    </button>
+
+</section>
+
+
+<!-- ================= INNER CIRCLE ================= -->
+
+<section class="inner-section">
+
+    <div class="inner-background"></div>
+
+    <button class="inner-arrow left" id="prev">‹</button>
+
+    <div class="inner-box">
+
+        <div class="inner-image-wrap">
+
+            <img
+                id="innerImage"
+                src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=85"
+                alt="ARBLG InnerCircle"
+            >
+
+        </div>
+
+        <div class="inner-text">
+
+            <h2 id="innerTitle">
+                ARBLG INNERCIRCLE NEUPASS
+            </h2>
+
+            <p id="innerDescription">
+                Enjoy special room rates, earn and redeem NeuCoins
+                and indulge in exceptional benefits with our
+                InnerCircle Loyalty Program.
+            </p>
+
+            <a href="#">ENROL ›</a>
+
+        </div>
+
+    </div>
+
+    <button class="inner-arrow right" id="next">›</button>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-top">
+
+        <div class="footer-brand">
+
+        
+      <!-- Footer Logo -->
+<div class="footer-logo">
+    <div class="footer-logo-mark">✦</div>
+    <div class="footer-logo-name">ARBLG</div>
+    <div class="footer-logo-sub">HOTEL &amp; RESORT</div>
+</div>
+            <h4>SUBSCRIBE FOR LATEST UPDATES</h4>
+
+            <div class="subscribe">
+
+                <input
+                    type="email"
+                    placeholder="Enter your email Address"
+                >
+
+                <button>SUBSCRIBE</button>
+
+            </div>
+
+            <h4>FOR BOOKINGS CONTACT</h4>
+
+            <p>1-800-111-825</p>
+            <p>+91 22660 11825</p>
+
+            <h4>CUSTOMER SUPPORT</h4>
+
+            <p>contact@arblghotels.com</p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <div>
+                <h4>QUICK LINKS</h4>
+
+                <a href="hotels.html">Hotels</a>
+                <a href="#">Dining</a>
+                <a href="#">Wellness</a>
+                <a href="#">Timeless Weddings</a>
+                <a href="#">Event Venues</a>
+                <a href="#">Magazine</a>
+            </div>
+
+            <div>
+                <h4>&nbsp;</h4>
+
+                <a href="#">About ARBLG</a>
+                <a href="#">Holidays</a>
+                <a href="offers.html">Offers</a>
+                <a href="#">Gifting</a>
+                <a href="#">InnerCircle</a>
+                <a href="#">Partners</a>
+            </div>
+
+        </div>
+
+
+        <div class="connect">
+
+            <h4>CONNECT WITH US</h4>
+
+            <div class="socials">
+                <span>f</span>
+                <span>𝕏</span>
+                <span>◎</span>
+                <span>▶</span>
+                <span>in</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="destinations-footer">
+
+        <span>DESTINATIONS</span>
+
+        <span>＋</span>
+
+    </div>
+
+
+    <div class="brands">
+
+        <h3>OUR BRANDS</h3>
+
+        <div class="brand-list">
+
+            <span>ARBLG</span>
+            <span>ARBLG LUXURY</span>
+            <span>ARBLG RESORTS</span>
+            <span>SELECTIONS</span>
+            <span>GATEWAY</span>
+            <span>VIVANTA</span>
+            <span>CINGER</span>
+            <span>TREE OF LIFE</span>
+            <span>SOLITAIRE</span>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 ARBLG Hotels & Resorts. All Rights Reserved.
+        </p>
+
+        <div>
+
+            <a href="#">Corporate</a>
+            <a href="#">Pressroom</a>
+            <a href="#">Work With Us</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- CHAT -->
+
+<button class="chat-button">
+    ≡
+</button>
+
+
+<script src="offers.js"></script>
+
+</body>
+</html>

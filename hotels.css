@@ -1,0 +1,2614 @@
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #333;
+    background: #fff;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 95px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 42px;
+
+    z-index: 10000;
+
+    color: #fff;
+
+    transition:
+        height 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    height: 82px;
+
+    background: #11120f;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+
+    z-index: 99999;
+}
+
+
+/* =====================================================
+   HEADER LOGO
+===================================================== */
+
+.navbar .footer-logo {
+    position: relative;
+
+    width: 180px;
+
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 18px;
+
+    margin: 0;
+
+    line-height: 1;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    color: #fff;
+
+    overflow: visible;
+
+    flex-shrink: 0;
+}
+
+
+/* STAR */
+
+.navbar .footer-logo-mark {
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: #d5b36a;
+
+    font-size: 14px;
+
+    line-height: 1;
+
+    z-index: 5;
+}
+
+
+/* ARBLG */
+
+.navbar .footer-logo-name {
+    font-family: "Times New Roman", serif;
+
+    font-size: 28px;
+
+    font-weight: 500;
+
+    letter-spacing: 8px;
+
+    margin-left: 8px;
+
+    color: #fff;
+
+    white-space: nowrap;
+}
+
+
+/* HOTEL & RESORT */
+
+.navbar .footer-logo-sub {
+    color: #d5b36a;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 7px;
+
+    letter-spacing: 4px;
+
+    margin-top: 7px;
+
+    white-space: nowrap;
+}
+
+
+/* =====================================================
+   NAV LINKS
+===================================================== */
+
+.nav-links {
+    display: flex;
+
+    align-items: center;
+
+    gap: 27px;
+
+    margin-left: 25px;
+}
+
+.nav-links a,
+.login {
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    white-space: nowrap;
+
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.login:hover {
+    color: #c09a3d;
+}
+
+
+/* =====================================================
+   NAV RIGHT
+===================================================== */
+
+.nav-right {
+    margin-left: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 28px;
+}
+
+
+/* =====================================================
+   BOOK BUTTON
+===================================================== */
+
+.book-btn {
+    border: none;
+
+    background: #b69136;
+
+    color: #fff;
+
+    padding: 14px 30px;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: background 0.3s ease;
+}
+
+.book-btn:hover {
+    background: #9e7d2d;
+}
+
+
+/* =====================================================
+   MORE MENU
+===================================================== */
+
+.more-menu {
+    position: static;
+}
+
+.more-btn {
+    border: none;
+
+    background: transparent;
+
+    color: #fff;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    padding: 20px 0;
+}
+
+.more-btn span {
+    color: #c09a3d;
+    margin-left: 4px;
+}
+
+
+/* MEGA MENU */
+
+.more-mega {
+    position: absolute;
+
+    top: 95px;
+    left: 0;
+
+    width: 100%;
+
+    min-height: 310px;
+
+    display: grid;
+
+    grid-template-columns: 34% 33% 33%;
+
+    background: rgba(255, 255, 255, 0.98);
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+
+    z-index: 99999;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform: translateY(-10px);
+
+    transition: 0.25s ease;
+}
+
+.more-menu.open .more-mega {
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+
+/* GOLD OFFER */
+
+.more-offer {
+    background: #b28b32;
+
+    color: #fff;
+
+    min-height: 310px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+.more-offer h2 {
+    font-family: "Times New Roman", serif;
+
+    font-size: 24px;
+
+    font-weight: 400;
+
+    margin-bottom: 18px;
+}
+
+.more-offer p {
+    font-size: 16px;
+
+    margin-bottom: 28px;
+}
+
+.more-offer a {
+    color: #fff;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    text-decoration: underline;
+}
+
+
+/* MORE COLUMNS */
+
+.more-column {
+    min-height: 310px;
+
+    padding: 25px 42px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    border-left: 1px solid #ddd;
+}
+
+.more-column a {
+    color: #b28b32;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    letter-spacing: 1px;
+
+    transition: 0.2s ease;
+}
+
+.more-column a:hover {
+    color: #80621f;
+
+    padding-left: 5px;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+    height: 450px;
+
+    position: relative;
+
+    background:
+        url("https://images.unsplash.com/photo-1582719478250-c89cae4dc85b")
+        center / cover no-repeat;
+}
+
+.hero-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.15) 55%,
+            rgba(0, 0, 0, 0.65)
+        );
+}
+
+.hero-content {
+    position: absolute;
+
+    left: 18.5%;
+
+    bottom: 110px;
+
+    color: #fff;
+
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+}
+
+
+/* =====================================================
+   HERO SEARCH
+===================================================== */
+
+.hero-search {
+    position: absolute;
+
+    left: 50%;
+    bottom: 13px;
+
+    transform: translateX(-50%);
+
+    width: 76%;
+    height: 50px;
+
+    background: #fff;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 17px;
+
+    color: #777;
+
+    z-index: 3;
+}
+
+.hero-search input {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    font-size: 16px;
+
+    color: #555;
+}
+
+.search-icon {
+    font-size: 25px;
+
+    margin-right: 10px;
+}
+
+.mic-icon {
+    font-size: 20px;
+}
+
+
+/* =====================================================
+   SECTION TITLE
+===================================================== */
+
+.section-title {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+.section-title span {
+    width: 58px;
+
+    height: 1px;
+
+    background: #555;
+}
+
+.section-title h2 {
+    font-size: 43px;
+
+    color: #20354b;
+}
+
+
+/* =====================================================
+   EXPLORE
+===================================================== */
+
+.explore-section {
+    padding: 50px 8% 15px;
+
+    background: #f7f7f7;
+}
+
+.section-description {
+    width: 600px;
+
+    max-width: 90%;
+
+    margin: 30px auto 65px;
+
+    text-align: center;
+
+    color: #35536d;
+
+    line-height: 1.5;
+
+    font-size: 16px;
+}
+
+
+/* =====================================================
+   CATEGORY SLIDER
+===================================================== */
+
+.category-slider {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.categories {
+    display: flex;
+
+    width: 78%;
+
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+.category {
+    width: 20%;
+
+    min-width: 160px;
+
+    height: 125px;
+
+    border-right: 1px solid #ddd;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    color: #666;
+
+    font-family: "Playfair Display", serif;
+
+    cursor: pointer;
+}
+
+.category:first-child {
+    border-left: 1px solid #ddd;
+}
+
+.category.active {
+    background: #fff;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+    color: #b18b32;
+}
+
+.category-icon {
+    font-size: 24px;
+
+    color: #c4c4c4;
+}
+
+.category.active .category-icon {
+    color: #b18b32;
+}
+
+.category span {
+    font-size: 16px;
+}
+
+
+/* =====================================================
+   CATEGORY ARROWS
+===================================================== */
+
+.category-arrow {
+    position: absolute;
+
+    width: 44px;
+    height: 44px;
+
+    border: none;
+
+    background: #fff;
+
+    border-radius: 50%;
+
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.12);
+
+    font-size: 30px;
+
+    color: #555;
+
+    cursor: pointer;
+
+    z-index: 2;
+}
+
+.category-arrow.left {
+    left: 1%;
+}
+
+.category-arrow.right {
+    right: 1%;
+}
+
+
+/* =====================================================
+   HOTELS
+===================================================== */
+
+.hotel-section {
+    padding: 35px 12% 60px;
+
+    background: #fff;
+}
+
+.filters {
+    display: flex;
+
+    gap: 30px;
+
+    margin-bottom: 42px;
+}
+
+.filter {
+    width: 320px;
+
+    border-bottom: 2px solid #555;
+
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+}
+
+.filter input,
+.filter select {
+    width: 100%;
+
+    height: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    font-size: 16px;
+
+    color: #34516b;
+}
+
+.filter select {
+    cursor: pointer;
+}
+
+.destination span {
+    font-size: 26px;
+
+    margin-right: 8px;
+}
+
+
+/* =====================================================
+   HOTEL GRID
+===================================================== */
+
+.hotel-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 28px;
+
+    align-items: start;
+}
+
+.hotel-card {
+    background: #fff;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+
+    overflow: hidden;
+}
+
+.hotel-card > img {
+    width: 100%;
+
+    height: 320px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.hotel-content {
+    position: relative;
+
+    margin-top: -1px;
+
+    background: #fff;
+
+    padding: 23px 22px 13px;
+}
+
+.hotel-content h3 {
+    font-size: 17px;
+
+    color: #34516b;
+
+    margin-bottom: 10px;
+}
+
+.hotel-content p {
+    color: #536d82;
+
+    font-size: 13px;
+
+    line-height: 1.55;
+
+    min-height: 42px;
+}
+
+.card-bottom {
+    margin-top: 15px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.card-bottom button,
+.offer-bottom button {
+    border: none;
+
+    background: #b28b32;
+
+    color: #fff;
+
+    padding: 13px 25px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.card-bottom a,
+.offer-bottom a {
+    color: #b28b32;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    letter-spacing: 1px;
+}
+
+.load-more {
+    display: block;
+
+    margin: 65px auto 0;
+
+    border: none;
+
+    background: transparent;
+
+    color: #b28b32;
+
+    font-size: 13px;
+
+    letter-spacing: 1.5px;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   OFFERS
+===================================================== */
+
+.offers-section,
+.member-section {
+    background: #f7f7f7;
+
+    padding: 0 12% 60px;
+}
+
+.offers-section .section-title,
+.member-section .section-title {
+    padding: 0 0 60px;
+}
+
+.offer-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+.offer-card {
+    background: #fff;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.offer-card > img {
+    width: 100%;
+
+    height: 305px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.offer-content {
+    padding: 22px 22px 20px;
+}
+
+.offer-content h3 {
+    font-size: 17px;
+
+    color: #34516b;
+
+    margin-bottom: 10px;
+}
+
+.offer-content p {
+    font-size: 13px;
+
+    color: #536d82;
+
+    line-height: 1.55;
+
+    margin-bottom: 10px;
+}
+
+.offer-bottom {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 14px;
+}
+
+
+/* =====================================================
+   MEMBER SECTION
+===================================================== */
+
+.member-section {
+    padding-top: 10px;
+
+    padding-bottom: 70px;
+
+    background: #fff;
+}
+
+
+/* =====================================================
+   INNER CIRCLE
+===================================================== */
+
+.inner-circle {
+    height: 510px;
+
+    position: relative;
+
+    margin: 0 5%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow: hidden;
+
+    background: #111;
+}
+
+.inner-bg {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+        ),
+        url("https://images.unsplash.com/photo-1564507592333-c60657eea523")
+        center / cover no-repeat;
+
+    filter: blur(1px);
+
+    transform: scale(1.03);
+}
+
+.inner-card {
+    position: relative;
+
+    z-index: 2;
+
+    width: 68%;
+
+    height: 305px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    background: #fff;
+}
+
+.inner-image img {
+    width: 100%;
+
+    height: 305px;
+
+    object-fit: cover;
+}
+
+.inner-content {
+    padding: 45px 60px;
+
+    color: #333;
+}
+
+.inner-content h2 {
+    color: #20354b;
+
+    font-size: 24px;
+
+    margin-bottom: 20px;
+}
+
+.inner-content p {
+    color: #555;
+
+    line-height: 1.5;
+
+    margin-bottom: 18px;
+}
+
+.inner-content a {
+    color: #b28b32;
+
+    text-decoration: none;
+
+    letter-spacing: 1px;
+
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   INNER CIRCLE ARROWS
+===================================================== */
+
+.circle-arrow {
+    position: absolute;
+
+    z-index: 5;
+
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255, 255, 255, 0.7);
+
+    background: rgba(255, 255, 255, 0.15);
+
+    color: #fff;
+
+    font-size: 30px;
+
+    cursor: pointer;
+}
+
+.circle-arrow.left {
+    left: 4%;
+}
+
+.circle-arrow.right {
+    right: 4%;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer {
+    background: #11110f;
+
+    color: #eee;
+
+    padding: 55px 6% 20px;
+
+    font-family: Arial, sans-serif;
+}
+
+.footer-top {
+    display: grid;
+
+    grid-template-columns: 1fr 1.4fr;
+
+    gap: 80px;
+
+    padding-bottom: 45px;
+}
+
+
+/* =====================================================
+   FOOTER LOGO
+===================================================== */
+
+.footer-logo {
+    position: relative;
+
+    display: inline-flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    width: 170px;
+
+    padding-top: 18px;
+
+    margin-bottom: 38px;
+
+    line-height: 1;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    overflow: visible;
+}
+
+
+/* FOOTER STAR */
+
+.footer-logo-mark {
+    position: absolute;
+
+    top: 0;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: #d5b36a;
+
+    font-size: 14px;
+
+    line-height: 1;
+
+    z-index: 2;
+}
+
+
+/* FOOTER ARBLG */
+
+.footer-logo-name {
+    font-family: "Times New Roman", serif;
+
+    font-size: 39px;
+
+    font-weight: 500;
+
+    letter-spacing: 8px;
+
+    margin-left: 7px;
+
+    color: #fff;
+}
+
+
+/* FOOTER SUB */
+
+.footer-logo-sub {
+    color: #d5b36a;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 8px;
+
+    letter-spacing: 4px;
+
+    margin-top: 8px;
+}
+
+
+/* =====================================================
+   FOOTER HEADINGS
+===================================================== */
+
+.footer h4 {
+    font-size: 12px;
+
+    color: #999;
+
+    margin-bottom: 18px;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* =====================================================
+   SUBSCRIBE
+===================================================== */
+
+.subscribe {
+    display: flex;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.subscribe input {
+    width: 345px;
+
+    height: 45px;
+
+    background: transparent;
+
+    border: none;
+
+    border-bottom: 1px solid #aaa;
+
+    outline: none;
+
+    color: #fff;
+
+    font-size: 16px;
+}
+
+.subscribe button {
+    height: 45px;
+
+    padding: 0 27px;
+
+    border: none;
+
+    background: #ccc;
+
+    color: #555;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   CONTACT
+===================================================== */
+
+.contact p {
+    margin-bottom: 12px;
+
+    color: #fff;
+
+    font-size: 14px;
+}
+
+.contact h4:nth-of-type(2) {
+    margin-top: 22px;
+}
+
+.email {
+    margin-left: 0;
+
+    margin-top: 0;
+}
+
+
+/* =====================================================
+   FOOTER LINKS
+===================================================== */
+
+.links-columns {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+}
+
+.links-columns a {
+    display: block;
+
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    margin-bottom: 14px;
+}
+
+.links-columns a:hover {
+    color: #b28b32;
+}
+
+
+/* =====================================================
+   SOCIAL
+===================================================== */
+
+.social-icons {
+    display: flex;
+
+    gap: 20px;
+
+    font-size: 16px;
+}
+
+
+/* =====================================================
+   FOOTER ROW
+===================================================== */
+
+.footer-row {
+    border-top: 1px solid #555;
+
+    border-bottom: 1px solid #555;
+
+    padding: 25px 0;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color: #888;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+.plus {
+    font-size: 26px;
+
+    color: #fff;
+}
+
+
+/* =====================================================
+   BRANDS
+===================================================== */
+
+.brands {
+    padding: 28px 0;
+
+    border-bottom: 1px solid #555;
+}
+
+.brands h3 {
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    margin-bottom: 25px;
+}
+
+.brand-list {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+    font-family: "Times New Roman", serif;
+
+    font-size: 20px;
+}
+
+
+/* =====================================================
+   FOOTER BOTTOM
+===================================================== */
+
+.footer-bottom {
+    min-height: 95px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    position: relative;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+}
+
+.bottom-links {
+    margin-left: auto;
+
+    max-width: 55%;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: flex-end;
+
+    gap: 15px;
+}
+
+.bottom-links a {
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 11px;
+}
+
+.bottom-links a:hover {
+    color: #b28b32;
+}
+
+.back-top {
+    width: 44px;
+
+    height: 44px;
+
+    border-radius: 50%;
+
+    border: none;
+
+    background: #333;
+
+    color: #fff;
+
+    font-size: 25px;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   CHAT BUTTON
+===================================================== */
+
+.chat-button {
+    position: fixed;
+
+    right: 40px;
+
+    bottom: 25px;
+
+    width: 52px;
+
+    height: 52px;
+
+    border-radius: 50%;
+
+    border: 2px solid #fff;
+
+    background: #b28b32;
+
+    color: #fff;
+
+    font-size: 20px;
+
+    z-index: 999;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   BOOK A STAY PANEL
+===================================================== */
+
+.booking-panel {
+    position: fixed;
+
+    top: 0;
+
+    right: 0;
+
+    width: 420px;
+
+    height: 100vh;
+
+    background: #fff;
+
+    z-index: 100000;
+
+    transform: translateX(100%);
+
+    transition: transform 0.35s ease;
+
+    box-shadow: -8px 0 30px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+.booking-panel.active {
+    transform: translateX(0);
+}
+
+
+/* BOOKING TOP */
+
+.booking-top {
+    height: 75px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    padding: 0 30px;
+
+    border-bottom: 1px solid #eee;
+}
+
+.booking-top button {
+    border: none;
+
+    background: transparent;
+
+    color: #222;
+
+    font-size: 12px;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+}
+
+
+/* BOOKING CONTENT */
+
+.booking-content {
+    flex: 1;
+
+    overflow-y: auto;
+
+    padding: 35px 32px;
+}
+
+
+/* HOTEL SEARCH */
+
+.hotel-search {
+    height: 55px;
+
+    border-bottom: 1px solid #aaa;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 35px;
+}
+
+.hotel-search span {
+    font-size: 27px;
+
+    color: #777;
+}
+
+.hotel-search input {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    font-size: 15px;
+
+    color: #222;
+
+    background: transparent;
+}
+
+
+/* DATE */
+
+.date-row {
+    display: grid;
+
+    grid-template-columns: 1fr 25px 1fr;
+
+    align-items: end;
+
+    gap: 12px;
+
+    margin-bottom: 38px;
+}
+
+.date-row > div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.date-row label {
+    font-size: 10px;
+
+    letter-spacing: 1.5px;
+
+    color: #777;
+}
+
+.date-row input {
+    border: none;
+
+    border-bottom: 1px solid #aaa;
+
+    padding: 8px 0;
+
+    font-size: 14px;
+
+    outline: none;
+
+    color: #222;
+
+    width: 100%;
+
+    background: transparent;
+}
+
+.date-row > span {
+    text-align: center;
+
+    color: #777;
+
+    padding-bottom: 10px;
+}
+
+
+/* ROOMS */
+
+.rooms-label {
+    font-size: 10px;
+
+    letter-spacing: 1.5px;
+
+    color: #777;
+
+    margin-bottom: 12px;
+}
+
+.rooms-guests {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 16px 0;
+
+    border-bottom: 1px solid #ddd;
+
+    cursor: pointer;
+
+    color: #222;
+
+    font-size: 14px;
+}
+
+.rooms-guests > span:first-child {
+    font-size: 22px;
+
+    color: #777;
+}
+
+
+/* ROOM */
+
+.room-title {
+    font-family: "Times New Roman", serif;
+
+    font-size: 20px;
+
+    font-weight: 400;
+
+    margin: 32px 0 18px;
+
+    color: #222;
+}
+
+
+/* GUEST BOX */
+
+.guest-box {
+    border: 1px solid #ddd;
+
+    padding: 20px;
+
+    background: #fafafa;
+}
+
+.guest-item {
+    display: grid;
+
+    grid-template-columns: 40px 1fr 40px;
+
+    align-items: center;
+
+    text-align: center;
+
+    min-height: 45px;
+}
+
+.guest-item button {
+    width: 34px;
+
+    height: 34px;
+
+    border: 1px solid #c8c8c8;
+
+    background: #fff;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    color: #555;
+}
+
+.guest-item button:hover {
+    border-color: #b28b32;
+
+    color: #b28b32;
+}
+
+.guest-item span {
+    font-size: 14px;
+
+    color: #222;
+}
+
+.guest-item small {
+    display: block;
+
+    font-size: 10px;
+
+    color: #888;
+
+    margin-top: 3px;
+}
+
+.divider {
+    height: 1px;
+
+    background: #ddd;
+
+    margin: 10px 0;
+}
+
+
+/* ADD ROOM */
+
+.add-room {
+    border: none;
+
+    background: transparent;
+
+    color: #b28b32;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+    margin-top: 25px;
+
+    cursor: pointer;
+}
+
+
+/* BOOKING FOOTER */
+
+.booking-footer {
+    background: #fff;
+
+    border-top: 1px solid #ddd;
+
+    padding: 20px 30px 28px;
+}
+
+
+/* SPECIAL CODE */
+
+.special-code {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 14px 0;
+
+    border-bottom: 1px solid #ddd;
+
+    cursor: pointer;
+
+    font-size: 13px;
+
+    color: #333;
+
+    margin-bottom: 20px;
+}
+
+.special-dropdown {
+    position: absolute;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: calc(100% + 5px);
+
+    background: #fff;
+
+    border: 1px solid #ddd;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+
+    display: none;
+
+    z-index: 20;
+}
+
+.special-code.open .special-dropdown {
+    display: block;
+}
+
+.special-option {
+    padding: 15px;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+    color: #333;
+}
+
+.special-option:hover {
+    background: #f5f5f5;
+}
+
+.special-option.selected {
+    color: #b28b32;
+}
+
+
+/* CHECK RATES */
+
+.check-rates {
+    width: 100%;
+
+    height: 54px;
+
+    border: none;
+
+    background: #b28b32;
+
+    color: #fff;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.check-rates:hover {
+    background: #8f6e25;
+}
+
+
+/* =====================================================
+   RESPONSIVE - 1000px
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .navbar {
+        padding: 0 25px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero-content {
+        left: 10%;
+    }
+
+    .hotel-section,
+    .offers-section,
+    .member-section {
+        padding-left: 6%;
+
+        padding-right: 6%;
+    }
+
+    .hotel-grid,
+    .offer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .inner-card {
+        width: 85%;
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* =====================================================
+   RESPONSIVE - 700px
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        height: 75px;
+
+        padding: 0 20px;
+    }
+
+    .navbar.scrolled {
+        height: 70px;
+    }
+
+    .navbar .footer-logo {
+        width: 140px;
+    }
+
+    .navbar .footer-logo-name {
+        font-size: 23px;
+    }
+
+    .navbar .footer-logo-sub {
+        font-size: 6px;
+    }
+
+    .nav-right .login {
+        display: none;
+    }
+
+    .book-btn {
+        padding: 11px 18px;
+
+        font-size: 12px;
+    }
+
+    .hero {
+        height: 420px;
+    }
+
+    .hero-content {
+        left: 7%;
+
+        bottom: 105px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-search {
+        width: 90%;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+    .section-title {
+        gap: 15px;
+    }
+
+    .section-title span {
+        width: 35px;
+    }
+
+    .categories {
+        width: 100%;
+
+        overflow-x: auto;
+
+        justify-content: flex-start;
+    }
+
+    .category {
+        min-width: 150px;
+    }
+
+    .category-arrow {
+        display: none;
+    }
+
+    .filters {
+        flex-direction: column;
+    }
+
+    .filter {
+        width: 100%;
+    }
+
+    .inner-circle {
+        margin: 0;
+
+        height: auto;
+
+        padding: 60px 15px;
+    }
+
+    .inner-card {
+        width: 100%;
+
+        height: auto;
+
+        grid-template-columns: 1fr;
+    }
+
+    .inner-image img {
+        height: 240px;
+    }
+
+    .inner-content {
+        padding: 30px;
+    }
+
+    .circle-arrow {
+        display: none;
+    }
+
+    .footer {
+        padding: 45px 6% 20px;
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+    .footer-logo {
+        margin-bottom: 25px;
+    }
+
+    .subscribe {
+        width: 100%;
+    }
+
+    .subscribe input {
+        width: 100%;
+    }
+
+    .subscribe button {
+        padding: 0 18px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding: 25px 0;
+    }
+
+    .bottom-links {
+        max-width: 100%;
+
+        margin: 0;
+
+        justify-content: flex-start;
+    }
+
+    .chat-button {
+        right: 20px;
+
+        bottom: 20px;
+    }
+
+    /* BOOKING PANEL */
+
+    .booking-panel {
+        width: 100%;
+    }
+
+    .booking-content {
+        padding: 25px 22px;
+    }
+
+    .booking-footer {
+        padding: 18px 22px 25px;
+    }
+}
+
+
+/* =====================================================
+   VERY SMALL MOBILE
+===================================================== */
+
+@media (max-width: 450px) {
+
+    .navbar .footer-logo {
+        width: 110px;
+    }
+
+    .navbar .footer-logo-name {
+        font-size: 19px;
+
+        letter-spacing: 6px;
+    }
+
+    .navbar .footer-logo-sub {
+        font-size: 5px;
+
+        letter-spacing: 3px;
+    }
+
+    .nav-right {
+        gap: 10px;
+    }
+
+    .book-btn {
+        padding: 9px 13px;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-search {
+        height: 46px;
+    }
+
+    .section-title h2 {
+        font-size: 25px;
+    }
+
+    .subscribe {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 10px;
+    }
+
+    .subscribe input,
+    .subscribe button {
+        width: 100%;
+    }
+
+    .brand-list {
+        justify-content: flex-start;
+    }
+}
+
+
+/* =====================================================
+   BOOK A STAY PANEL
+===================================================== */
+
+.booking-panel {
+    position: fixed;
+
+    top: 0;
+    right: 0;
+
+    width: 420px;
+    height: 100vh;
+
+    background: #fff;
+
+    z-index: 100000;
+
+    transform: translateX(100%);
+
+    transition: transform 0.35s ease;
+
+    box-shadow: -8px 0 30px rgba(0, 0, 0, 0.20);
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* OPEN */
+
+.booking-panel.active {
+    transform: translateX(0);
+}
+
+
+/* =====================================================
+   TOP
+===================================================== */
+
+.booking-top {
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    padding: 0 30px;
+
+    border-bottom: 1px solid #eee;
+}
+
+.booking-top button {
+    border: none;
+
+    background: transparent;
+
+    color: #222;
+
+    font-size: 12px;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.booking-content {
+    flex: 1;
+
+    overflow-y: auto;
+
+    padding: 35px 32px;
+}
+
+
+/* =====================================================
+   HOTEL SEARCH
+===================================================== */
+
+.hotel-search {
+    height: 55px;
+
+    border-bottom: 1px solid #aaa;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 35px;
+}
+
+.hotel-search span {
+    font-size: 27px;
+
+    color: #777;
+}
+
+.hotel-search input {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    font-size: 15px;
+
+    color: #222;
+
+    background: transparent;
+}
+
+.hotel-search input::placeholder {
+    color: #777;
+}
+
+
+/* =====================================================
+   DATE
+===================================================== */
+
+.date-row {
+    display: grid;
+
+    grid-template-columns: 1fr 25px 1fr;
+
+    align-items: end;
+
+    gap: 12px;
+
+    margin-bottom: 38px;
+}
+
+.date-row > div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.date-row label {
+    font-size: 10px;
+
+    letter-spacing: 1.5px;
+
+    color: #777;
+}
+
+.date-row input {
+    border: none;
+
+    border-bottom: 1px solid #aaa;
+
+    padding: 8px 0;
+
+    font-size: 14px;
+
+    outline: none;
+
+    color: #222;
+
+    width: 100%;
+
+    background: transparent;
+}
+
+.date-row > span {
+    text-align: center;
+
+    color: #777;
+
+    padding-bottom: 10px;
+}
+
+
+/* =====================================================
+   ROOMS
+===================================================== */
+
+.rooms-label {
+    font-size: 10px;
+
+    letter-spacing: 1.5px;
+
+    color: #777;
+
+    margin-bottom: 12px;
+}
+
+
+.rooms-guests {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 16px 0;
+
+    border-bottom: 1px solid #ddd;
+
+    cursor: pointer;
+
+    color: #222;
+
+    font-size: 14px;
+}
+
+.rooms-guests > span:first-child {
+    font-size: 22px;
+
+    color: #777;
+}
+
+.rooms-guests > span:last-child {
+    font-size: 14px;
+
+    color: #777;
+}
+
+
+/* =====================================================
+   ROOM TITLE
+===================================================== */
+
+.room-title {
+    font-family: "Times New Roman", serif;
+
+    font-size: 20px;
+
+    font-weight: 400;
+
+    margin: 32px 0 18px;
+
+    color: #222;
+}
+
+
+/* =====================================================
+   GUEST BOX
+===================================================== */
+
+.guest-box {
+    border: 1px solid #ddd;
+
+    padding: 20px;
+
+    background: #fafafa;
+}
+
+.guest-item {
+    display: grid;
+
+    grid-template-columns: 40px 1fr 40px;
+
+    align-items: center;
+
+    text-align: center;
+
+    min-height: 45px;
+}
+
+.guest-item button {
+    width: 34px;
+    height: 34px;
+
+    border: 1px solid #c8c8c8;
+
+    background: #fff;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    color: #555;
+}
+
+.guest-item button:hover {
+    border-color: #b28b32;
+
+    color: #b28b32;
+}
+
+.guest-item span {
+    font-size: 14px;
+
+    color: #222;
+}
+
+.guest-item small {
+    display: block;
+
+    font-size: 10px;
+
+    color: #888;
+
+    margin-top: 3px;
+}
+
+.divider {
+    height: 1px;
+
+    background: #ddd;
+
+    margin: 10px 0;
+}
+
+
+/* =====================================================
+   ADD ROOM
+===================================================== */
+
+.add-room {
+    border: none;
+
+    background: transparent;
+
+    color: #b28b32;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+    margin-top: 25px;
+
+    cursor: pointer;
+
+    padding: 0;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.booking-footer {
+    background: #fff;
+
+    border-top: 1px solid #ddd;
+
+    padding: 20px 30px 28px;
+}
+
+
+/* =====================================================
+   SPECIAL CODE
+===================================================== */
+
+.special-code {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 14px 0;
+
+    border-bottom: 1px solid #ddd;
+
+    cursor: pointer;
+
+    font-size: 13px;
+
+    color: #333;
+
+    margin-bottom: 20px;
+}
+
+
+.special-dropdown {
+    position: absolute;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: calc(100% + 5px);
+
+    background: #fff;
+
+    border: 1px solid #ddd;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,.12);
+
+    display: none;
+
+    z-index: 20;
+}
+
+.special-code.open .special-dropdown {
+    display: block;
+}
+
+
+.special-option {
+    padding: 15px;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+    color: #333;
+}
+
+.special-option:hover {
+    background: #f5f5f5;
+}
+
+.special-option.selected {
+    color: #b28b32;
+}
+
+
+/* =====================================================
+   CHECK RATES
+===================================================== */
+
+.check-rates {
+    width: 100%;
+
+    height: 54px;
+
+    border: none;
+
+    background: #b28b32;
+
+    color: #fff;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+
+    cursor: pointer;
+
+    transition: .25s ease;
+}
+
+.check-rates:hover {
+    background: #8f6e25;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .booking-panel {
+        width: 100%;
+    }
+
+    .booking-content {
+        padding: 25px 22px;
+    }
+
+    .booking-footer {
+        padding: 18px 22px 25px;
+    }
+
+}

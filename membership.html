@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ARBLG Memberships | Hotel & Resort</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@400;500&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="membership.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+
+        <div class="logo-star">✦</div>
+
+        <div class="logo-name">ARBLG</div>
+
+        <div class="logo-sub">
+            HOTEL &amp; RESORT
+        </div>
+
+    </a>
+
+
+    <nav class="nav-links">
+
+        <a href="destinations.html">DESTINATIONS</a>
+
+        <a href="hotels.html">HOTELS</a>
+
+        <a href="experience.html">EXPERIENCES</a>
+
+        <a href="offers.html">OFFERS</a>
+
+        <a href="membership.html" class="active">
+            MEMBERSHIPS <span>⌃</span>
+        </a>
+
+       <div class="more-menu">
+
+    <button class="more-btn" id="moreBtn">
+        MORE <span>⌃</span>
+    </button>
+
+    <div class="more-mega" id="moreMega">
+
+        <!-- LEFT GOLD BOX -->
+        <div class="more-offer">
+
+            <h2>BOOK DIRECT OFFERS</h2>
+
+            <p>
+                Exclusive offers and special promotions
+            </p>
+
+            <a href="offers.html">
+                MORE ›
+            </a>
+
+        </div>
+
+
+        <!-- MIDDLE LINKS -->
+        <div class="more-column">
+
+            <a href="dining.html">DINING</a>
+
+            <a href="meetings.html">
+                MEETINGS AND CONFERENCES
+            </a>
+
+            <a href="weddings.html">
+                TIMELESS WEDDINGS
+            </a>
+
+            <a href="holidays.html">
+                ARBLG HOLIDAYS
+            </a>
+
+            <a href="safaris.html">
+                ARBLG SAFARIS
+            </a>
+
+            <a href="wellness.html">
+                WELLNESS
+            </a>
+
+            <a href="gifting.html">
+                GIFTING
+            </a>
+
+        </div>
+
+
+        <!-- RIGHT LINKS -->
+        <div class="more-column">
+
+            <a href="business.html">
+                BUSINESS USERS
+            </a>
+
+            <a href="about.html">
+                ABOUT ARBLG
+            </a>
+
+            <a href="she-remains.html">
+                SHE REMAINS THE ARBLG
+            </a>
+
+            <a href="sky-view.html">
+                ARBLG SKY VIEW RESIDENCES
+            </a>
+
+            <a href="travel-stories.html">
+                TRAVEL STORIES
+            </a>
+
+            <a href="contact.html">
+                CONTACT US
+            </a>
+
+            <a href="manage-booking.html" class="manage-booking">
+                <span>›</span>
+                MANAGE YOUR BOOKING
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+    </nav>
+
+
+    <div class="nav-right">
+
+        <a href="login.html" class="login">
+            LOGIN / JOIN
+        </a>
+
+        <!-- RIGHT SIDE -->
+
+    <button class="book-btn" id="bookStayBtn">
+        BOOK A STAY
+    </button>
+
+</div>
+
+</header>
+
+
+<!-- ================= BOOK A STAY PANEL ================= -->
+
+<div class="booking-panel" id="bookingPanel">
+
+    <!-- TOP -->
+    <div class="booking-top">
+        <button id="closeBooking">
+            CLOSE ✕
+        </button>
+    </div>
+
+
+    <!-- CONTENT -->
+    <div class="booking-content">
+
+        <!-- HOTEL SEARCH -->
+        <div class="hotel-search">
+            <span>⌕</span>
+
+            <input
+                type="text"
+                id="hotelInput"
+                placeholder="Find a Hotel or Destination"
+            >
+        </div>
+
+
+        <!-- DATES -->
+        <div class="date-row">
+
+            <div>
+                <label>CHECK-IN</label>
+
+                <input
+                    type="date"
+                    id="checkIn"
+                >
+            </div>
+
+            <span>—</span>
+
+            <div>
+                <label>CHECK-OUT</label>
+
+                <input
+                    type="date"
+                    id="checkOut"
+                >
+            </div>
+
+        </div>
+
+
+        <!-- ROOMS LABEL -->
+        <div class="rooms-label">
+            ROOMS &amp; GUESTS
+        </div>
+
+
+        <!-- ROOM SUMMARY -->
+        <div class="rooms-guests">
+
+            <span>♧</span>
+
+            <span>
+                <b id="adultCountText">1</b> Adult,
+                <b id="childCountText">0</b> Child -
+                <b id="roomCountText">1</b> Room
+            </span>
+
+            <span>⌃</span>
+
+        </div>
+
+
+        <!-- ROOM 1 -->
+        <h3 class="room-title">
+            Room 1
+        </h3>
+
+
+        <!-- GUEST BOX -->
+        <div class="guest-box">
+
+            <!-- ADULT -->
+            <div class="guest-item">
+
+                <button id="adultMinus">
+                    −
+                </button>
+
+                <span>
+                    <b id="adultCount">1</b>
+                    Adult
+                </span>
+
+                <button id="adultPlus">
+                    +
+                </button>
+
+            </div>
+
+
+            <div class="divider"></div>
+
+
+            <!-- CHILD -->
+            <div class="guest-item">
+
+                <button id="childMinus">
+                    −
+                </button>
+
+                <span>
+                    <b id="childCount">0</b>
+                    Child
+                    <small>(0 - 12 yrs)</small>
+                </span>
+
+                <button id="childPlus">
+                    +
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ADD ROOM -->
+        <button class="add-room" id="addRoom">
+            ADD MORE ROOMS
+        </button>
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <div class="booking-footer">
+
+
+        <!-- SPECIAL CODE -->
+        <div class="special-code" id="specialCode">
+
+            <span>
+                Special Code
+            </span>
+
+            <span>
+                ⌃
+            </span>
+
+
+            <div
+                class="special-dropdown"
+                id="specialDropdown"
+            >
+
+                <div
+                    class="special-option selected"
+                    data-value="None"
+                >
+                    ✓ &nbsp;&nbsp; None
+                </div>
+
+                <div
+                    class="special-option"
+                    data-value="Corporate Access Code"
+                >
+                    Corporate Access Code
+                </div>
+
+                <div
+                    class="special-option"
+                    data-value="Travel Agency Code"
+                >
+                    Travel Agency Code
+                </div>
+
+                <div
+                    class="special-option"
+                    data-value="Business Connect Code"
+                >
+                    Business Connect Code
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CHECK RATES -->
+        <button
+            class="check-rates"
+            id="checkRatesBtn"
+        >
+            CHECK RATES
+        </button>
+
+    </div>
+
+</div>
+
+
+
+
+
+<!-- ================= HERO ================= -->
+
+<section class="membership-hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <div class="hero-line"></div>
+
+        <h1>MEMBERSHIPS</h1>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MEMBERSHIP INTRO ================= -->
+
+<section class="membership-intro">
+
+    <div class="section-heading">
+
+        <span></span>
+
+        <h2>DISCOVER ARBLG MEMBERSHIPS</h2>
+
+        <span></span>
+
+    </div>
+
+    <p>
+        Unlock exclusive privileges, special rates and unforgettable
+        experiences with ARBLG Hotel &amp; Resort memberships.
+    </p>
+
+</section>
+
+
+<!-- ================= MEMBERSHIP CARDS ================= -->
+
+<section class="membership-section">
+
+    <div class="membership-grid">
+
+
+        <!-- CARD 1 -->
+
+        <article class="membership-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=85"
+                alt="ARBLG InnerCircle"
+            >
+
+            <div class="membership-card-content">
+
+                <div class="card-title">
+
+                    <span></span>
+
+                    <h3>ARBLG INNERCIRCLE</h3>
+
+                </div>
+
+                <p>
+                    Enjoy special room rates, exclusive privileges,
+                    personalised experiences and benefits designed
+                    for our members.
+                </p>
+
+                <a href="innercircle.html">
+                    DISCOVER MORE ›
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- CARD 2 -->
+
+        <article class="membership-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=1200&q=85"
+                alt="Member Rates"
+            >
+
+            <div class="membership-card-content">
+
+                <div class="card-title">
+
+                    <span></span>
+
+                    <h3>MEMBER RATES</h3>
+
+                </div>
+
+                <p>
+                    Access exclusive member-only rates and enjoy
+                    exceptional stays at ARBLG destinations.
+                </p>
+
+                <a href="membership-rates.html">
+                    VIEW MEMBER RATES ›
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- CARD 3 -->
+
+        <article class="membership-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=85"
+                alt="ARBLG NeuPass"
+            >
+
+            <div class="membership-card-content">
+
+                <div class="card-title">
+
+                    <span></span>
+
+                    <h3>ARBLG NEUPASS</h3>
+
+                </div>
+
+                <p>
+                    Earn and redeem rewards while enjoying special
+                    benefits and privileges across your journeys.
+                </p>
+
+                <a href="neupass.html">
+                    KNOW MORE ›
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- CARD 4 -->
+
+        <article class="membership-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=85"
+                alt="Epicure"
+            >
+
+            <div class="membership-card-content">
+
+                <div class="card-title">
+
+                    <span></span>
+
+                    <h3>EPICURE</h3>
+
+                </div>
+
+                <p>
+                    Discover exceptional dining experiences,
+                    exclusive privileges and memorable culinary
+                    moments.
+                </p>
+
+                <a href="epicure.html">
+                    EXPLORE EPICURE ›
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- CARD 5 -->
+
+        <article class="membership-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=85"
+                alt="Credit Card"
+            >
+
+            <div class="membership-card-content">
+
+                <div class="card-title">
+
+                    <span></span>
+
+                    <h3>ARBLG CREDIT CARD</h3>
+
+                </div>
+
+                <p>
+                    Enjoy additional privileges, rewards and
+                    exclusive benefits designed for frequent
+                    travellers.
+                </p>
+
+                <a href="credit-card.html">
+                    KNOW MORE ›
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- CARD 6 -->
+
+        <article class="membership-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=85"
+                alt="Business Connect"
+            >
+
+            <div class="membership-card-content">
+
+                <div class="card-title">
+
+                    <span></span>
+
+                    <h3>BUSINESS CONNECT</h3>
+
+                </div>
+
+                <p>
+                    Business travel made seamless with exclusive
+                    corporate benefits and preferred rates.
+                </p>
+
+                <a href="business-connect.html">
+                    KNOW MORE ›
+                </a>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ================= JOIN SECTION ================= -->
+
+<section class="join-section">
+
+    <div class="join-overlay"></div>
+
+    <div class="join-content">
+
+        <h2>JOIN ARBLG INNERCIRCLE</h2>
+
+        <p>
+            Become a member and unlock a world of exclusive
+            benefits and personalised experiences.
+        </p>
+
+        <a href="join.html" class="join-btn">
+            JOIN NOW
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-main">
+
+
+        <div class="footer-brand">
+
+            <div class="footer-logo">
+
+                <div class="footer-logo-mark">✦</div>
+
+                <div class="footer-logo-name">
+                    ARBLG
+                </div>
+
+                <div class="footer-logo-sub">
+                    HOTEL &amp; RESORT
+                </div>
+
+            </div>
+
+            <h4>SUBSCRIBE FOR LATEST UPDATES</h4>
+
+            <div class="subscribe">
+
+                <input
+                    type="email"
+                    placeholder="Enter your email Address"
+                >
+
+                <button>SUBSCRIBE</button>
+
+            </div>
+
+            <p>FOR BOOKINGS CONTACT</p>
+
+            <p>1-800-111-825</p>
+
+            <p>+91 22 6600 1125</p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <div>
+
+                <h4>QUICK LINKS</h4>
+
+                <a href="hotels.html">Hotels</a>
+                <a href="#">Dining</a>
+                <a href="#">Wellness</a>
+                <a href="#">Experiences</a>
+                <a href="offers.html">Offers</a>
+
+            </div>
+
+            <div>
+
+                <h4>EXPLORE</h4>
+
+                <a href="membership.html">Memberships</a>
+                <a href="#">Destinations</a>
+                <a href="#">About ARBLG</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy Policy</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-social">
+
+            <h4>CONNECT WITH US</h4>
+
+            <div class="social-icons">
+
+                <span>f</span>
+                <span>𝕏</span>
+                <span>◎</span>
+                <span>▶</span>
+                <span>in</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="destinations-footer">
+
+        <span>DESTINATIONS</span>
+
+        <span>+</span>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <span>
+            © 2026 ARBLG Hotel &amp; Resort. All Rights Reserved.
+        </span>
+
+        <div>
+
+            <a href="#">Corporate</a>
+            <a href="#">Careers</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<button class="chat-button">☏</button>
+
+
+
+
+<script src="membership.js"></script>
+
+</body>
+</html>
+
+
+

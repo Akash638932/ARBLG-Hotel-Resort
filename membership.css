@@ -1,0 +1,1441 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", Arial, sans-serif;
+    color: #30445b;
+    background: #fff;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 92px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 45px;
+
+    z-index: 9999;
+
+    color: #fff;
+}
+
+.navbar.scrolled {
+    position: fixed;
+
+    height: 78px;
+
+    background: rgba(15,16,14,.96);
+
+    box-shadow: 0 3px 15px rgba(0,0,0,.25);
+}
+
+
+/* LOGO */
+
+.logo {
+    position: relative;
+
+    width: 155px;
+    height: 72px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 8px;
+
+    text-decoration: none;
+}
+
+.logo-star {
+    position: absolute;
+
+    top: -2px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: #d5b36a;
+
+    font-size: 19px;
+}
+
+.logo-name {
+    font-family: "Times New Roman", serif;
+
+    font-size: 29px;
+
+    letter-spacing: 7px;
+
+    color: #fff;
+}
+
+.logo-sub {
+    margin-top: 7px;
+
+    color: #d5b36a;
+
+    font-size: 7px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+}
+
+
+/* NAV LINKS */
+
+.nav-links {
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+    margin-left: 35px;
+}
+
+.nav-links a {
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    white-space: nowrap;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #d5b36a;
+}
+
+
+/* NAV RIGHT */
+
+.nav-right {
+    margin-left: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+.login {
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 13px;
+}
+
+.book-btn {
+    background: #b28b32;
+
+    color: #fff;
+
+    padding: 23px 32px;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+/* ================= HERO ================= */
+
+.membership-hero {
+    position: relative;
+
+    height: 570px;
+
+    background:
+        url("https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=2200&q=90")
+        center / cover no-repeat;
+
+    display: flex;
+
+    align-items: flex-end;
+}
+
+.hero-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(0,0,0,.45),
+            rgba(0,0,0,.08) 55%,
+            rgba(0,0,0,.55)
+        );
+}
+
+.hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    margin-left: 12%;
+
+    margin-bottom: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    color: #fff;
+}
+
+.hero-line {
+    width: 85px;
+
+    height: 1px;
+
+    background: #fff;
+}
+
+.hero-content h1 {
+    font-family: "Times New Roman", serif;
+
+    font-size: 43px;
+
+    font-weight: 400;
+}
+
+
+/* ================= INTRO ================= */
+
+.membership-intro {
+    text-align: center;
+
+    padding: 75px 20px 70px;
+}
+
+.section-heading {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 28px;
+}
+
+.section-heading span {
+    width: 55px;
+
+    height: 1px;
+
+    background: #333;
+}
+
+.section-heading h2 {
+    font-family: "Times New Roman", serif;
+
+    font-size: 39px;
+
+    font-weight: 400;
+
+    color: #30445b;
+}
+
+.membership-intro p {
+    max-width: 650px;
+
+    margin: 28px auto 0;
+
+    line-height: 1.6;
+
+    font-size: 15px;
+}
+
+
+/* ================= CARDS ================= */
+
+.membership-section {
+    width: 76%;
+
+    margin: auto;
+
+    padding-bottom: 100px;
+}
+
+.membership-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 65px 28px;
+}
+
+.membership-card {
+    background: #fff;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,.10);
+}
+
+.membership-card img {
+    width: 100%;
+
+    height: 300px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.membership-card-content {
+    padding: 28px 30px 32px;
+}
+
+.card-title {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.card-title span {
+    width: 28px;
+
+    height: 1px;
+
+    background: #555;
+}
+
+.card-title h3 {
+    font-family: "Times New Roman", serif;
+
+    font-size: 20px;
+
+    font-weight: 400;
+
+    color: #30445b;
+}
+
+.membership-card-content p {
+    margin: 22px 0;
+
+    font-size: 14px;
+
+    line-height: 1.55;
+
+    color: #52657a;
+}
+
+.membership-card-content a {
+    color: #b28b32;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* ================= JOIN ================= */
+
+.join-section {
+    position: relative;
+
+    height: 430px;
+
+    background:
+        url("https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=2200&q=90")
+        center / cover no-repeat;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+}
+
+.join-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(0,0,0,.52);
+}
+
+.join-content {
+    position: relative;
+
+    z-index: 2;
+
+    color: #fff;
+}
+
+.join-content h2 {
+    font-family: "Times New Roman", serif;
+
+    font-size: 38px;
+
+    font-weight: 400;
+
+    margin-bottom: 20px;
+}
+
+.join-content p {
+    max-width: 550px;
+
+    line-height: 1.6;
+
+    margin: auto auto 28px;
+}
+
+.join-btn {
+    display: inline-block;
+
+    background: #b28b32;
+
+    color: #fff;
+
+    padding: 15px 32px;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+    background: #11120f;
+
+    color: #fff;
+
+    padding: 60px 6% 25px;
+}
+
+.footer-main {
+    display: grid;
+
+    grid-template-columns: 2fr 1.5fr 1fr;
+
+    gap: 70px;
+}
+
+
+/* FOOTER LOGO */
+
+.footer-logo {
+    position: relative;
+
+    width: 180px;
+
+    height: 95px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding-top: 12px;
+}
+
+.footer-logo-mark {
+    position: absolute;
+
+    top: 0;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: #d5b36a;
+
+    font-size: 20px;
+}
+
+.footer-logo-name {
+    font-family: "Times New Roman", serif;
+
+    font-size: 32px;
+
+    letter-spacing: 8px;
+
+    color: #fff;
+}
+
+.footer-logo-sub {
+    margin-top: 8px;
+
+    color: #d5b36a;
+
+    font-size: 7px;
+
+    font-weight: 600;
+
+    letter-spacing: 4px;
+}
+
+
+/* FOOTER */
+
+.footer h4 {
+    color: #999;
+
+    font-size: 11px;
+
+    letter-spacing: .5px;
+
+    margin: 20px 0;
+}
+
+.subscribe {
+    display: flex;
+
+    max-width: 500px;
+
+    border-bottom: 1px solid #aaa;
+}
+
+.subscribe input {
+    flex: 1;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #fff;
+
+    padding: 13px 0;
+
+    font-size: 15px;
+}
+
+.subscribe button {
+    border: none;
+
+    background: #bbb;
+
+    color: #333;
+
+    padding: 12px 28px;
+
+    font-weight: 600;
+}
+
+.footer-brand p {
+    font-size: 14px;
+
+    margin: 12px 0;
+}
+
+.footer-links {
+    display: flex;
+
+    gap: 70px;
+}
+
+.footer-links a {
+    display: block;
+
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    margin: 13px 0;
+}
+
+.social-icons {
+    display: flex;
+
+    gap: 20px;
+}
+
+.social-icons span {
+    font-size: 15px;
+}
+
+.destinations-footer {
+    border-top: 1px solid #555;
+
+    border-bottom: 1px solid #555;
+
+    margin-top: 50px;
+
+    padding: 22px 0;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color: #999;
+
+    font-size: 12px;
+}
+
+.footer-bottom {
+    display: flex;
+
+    justify-content: space-between;
+
+    padding-top: 25px;
+
+    font-size: 11px;
+}
+
+.footer-bottom div {
+    display: flex;
+
+    gap: 18px;
+}
+
+.footer-bottom a {
+    color: #fff;
+
+    text-decoration: none;
+}
+
+
+/* CHAT */
+
+.chat-button {
+    position: fixed;
+
+    right: 28px;
+
+    bottom: 25px;
+
+    width: 52px;
+
+    height: 52px;
+
+    border-radius: 50%;
+
+    border: 2px solid #fff;
+
+    background: #b28b32;
+
+    color: #fff;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    z-index: 9999;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1000px) {
+
+    .nav-links {
+        gap: 15px;
+        margin-left: 10px;
+    }
+
+    .navbar {
+        padding: 0 25px;
+    }
+
+    .membership-section {
+        width: 88%;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .membership-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .membership-section {
+        width: 88%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 0 15px;
+    }
+
+    .login {
+        display: none;
+    }
+
+    .book-btn {
+        padding: 15px 18px;
+    }
+
+    .membership-hero {
+        height: 500px;
+    }
+
+    .hero-content {
+        margin-left: 8%;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .membership-intro {
+        padding: 55px 20px;
+    }
+
+    .section-heading {
+        gap: 10px;
+    }
+
+    .section-heading span {
+        width: 25px;
+    }
+
+    .section-heading h2 {
+        font-size: 25px;
+    }
+
+    .membership-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .membership-card img {
+        height: 230px;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .footer-bottom div {
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+/* ================= MORE MEGA MENU ================= */
+
+.more-menu {
+    position: static;
+}
+
+.more-btn {
+    border: none;
+    background: transparent;
+
+    color: #fdfcfa;
+
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 13px;
+
+    cursor: pointer;
+
+    padding: 25px 0;
+}
+
+.more-btn span {
+    margin-left: 3px;
+    font-size: 11px;
+}
+
+
+/* FULL WIDTH */
+
+.more-mega {
+    position: absolute;
+
+    top: 70px;
+    left: 0;
+
+    width: 100%;
+
+    min-height: 310px;
+
+    display: grid;
+
+    grid-template-columns: 34% 33% 33%;
+
+    background: rgba(255,255,255,.96);
+
+    box-shadow: 0 8px 25px rgba(0,0,0,.15);
+
+    z-index: 99999;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(-10px);
+
+    transition: .25s ease;
+}
+
+
+/* OPEN */
+
+.more-menu.open .more-mega {
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+
+/* ================= GOLD BOX ================= */
+
+.more-offer {
+    background: #b28b32;
+
+    color: #fff;
+
+    min-height: 310px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+.more-offer h2 {
+    font-family: "Times New Roman", serif;
+
+    font-size: 24px;
+
+    font-weight: 400;
+
+    margin-bottom: 18px;
+}
+
+.more-offer p {
+    font-size: 16px;
+
+    margin-bottom: 28px;
+}
+
+.more-offer a {
+    color: #fff;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    text-decoration: underline;
+}
+
+
+/* ================= LINK COLUMNS ================= */
+
+.more-column {
+    min-height: 310px;
+
+    padding: 25px 42px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    border-left: 1px solid #ddd;
+
+    background:
+        linear-gradient(
+            rgba(255,255,255,.88),
+            rgba(255,255,255,.88)
+        );
+}
+
+.more-column a {
+    color: #b28b32;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    letter-spacing: 1px;
+
+    transition: .2s ease;
+}
+
+.more-column a:hover {
+    color: #80621f;
+
+    padding-left: 5px;
+}
+
+
+/* MANAGE BOOKING */
+
+.more-column .manage-booking {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.manage-booking span {
+    font-size: 25px;
+
+    line-height: 10px;
+
+}
+
+
+
+
+
+
+/* =====================================================
+   BOOK A STAY PANEL
+===================================================== */
+
+.booking-panel {
+    position: fixed;
+
+    top: 0;
+    right: 0;
+
+    width: 420px;
+    height: 100vh;
+
+    background: #fff;
+
+    z-index: 100000;
+
+    transform: translateX(100%);
+
+    transition: transform 0.35s ease;
+
+    box-shadow: -8px 0 30px rgba(0, 0, 0, 0.20);
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* OPEN */
+
+.booking-panel.active {
+    transform: translateX(0);
+}
+
+
+/* =====================================================
+   TOP
+===================================================== */
+
+.booking-top {
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    padding: 0 30px;
+
+    border-bottom: 1px solid #eee;
+}
+
+.booking-top button {
+    border: none;
+
+    background: transparent;
+
+    color: #222;
+
+    font-size: 12px;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.booking-content {
+    flex: 1;
+
+    overflow-y: auto;
+
+    padding: 35px 32px;
+}
+
+
+/* =====================================================
+   HOTEL SEARCH
+===================================================== */
+
+.hotel-search {
+    height: 55px;
+
+    border-bottom: 1px solid #aaa;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 35px;
+}
+
+.hotel-search span {
+    font-size: 27px;
+
+    color: #777;
+}
+
+.hotel-search input {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    font-size: 15px;
+
+    color: #222;
+
+    background: transparent;
+}
+
+.hotel-search input::placeholder {
+    color: #777;
+}
+
+
+/* =====================================================
+   DATE
+===================================================== */
+
+.date-row {
+    display: grid;
+
+    grid-template-columns: 1fr 25px 1fr;
+
+    align-items: end;
+
+    gap: 12px;
+
+    margin-bottom: 38px;
+}
+
+.date-row > div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.date-row label {
+    font-size: 10px;
+
+    letter-spacing: 1.5px;
+
+    color: #777;
+}
+
+.date-row input {
+    border: none;
+
+    border-bottom: 1px solid #aaa;
+
+    padding: 8px 0;
+
+    font-size: 14px;
+
+    outline: none;
+
+    color: #222;
+
+    width: 100%;
+
+    background: transparent;
+}
+
+.date-row > span {
+    text-align: center;
+
+    color: #777;
+
+    padding-bottom: 10px;
+}
+
+
+/* =====================================================
+   ROOMS
+===================================================== */
+
+.rooms-label {
+    font-size: 10px;
+
+    letter-spacing: 1.5px;
+
+    color: #777;
+
+    margin-bottom: 12px;
+}
+
+
+.rooms-guests {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 16px 0;
+
+    border-bottom: 1px solid #ddd;
+
+    cursor: pointer;
+
+    color: #222;
+
+    font-size: 14px;
+}
+
+.rooms-guests > span:first-child {
+    font-size: 22px;
+
+    color: #777;
+}
+
+.rooms-guests > span:last-child {
+    font-size: 14px;
+
+    color: #777;
+}
+
+
+/* =====================================================
+   ROOM TITLE
+===================================================== */
+
+.room-title {
+    font-family: "Times New Roman", serif;
+
+    font-size: 20px;
+
+    font-weight: 400;
+
+    margin: 32px 0 18px;
+
+    color: #222;
+}
+
+
+/* =====================================================
+   GUEST BOX
+===================================================== */
+
+.guest-box {
+    border: 1px solid #ddd;
+
+    padding: 20px;
+
+    background: #fafafa;
+}
+
+.guest-item {
+    display: grid;
+
+    grid-template-columns: 40px 1fr 40px;
+
+    align-items: center;
+
+    text-align: center;
+
+    min-height: 45px;
+}
+
+.guest-item button {
+    width: 34px;
+    height: 34px;
+
+    border: 1px solid #c8c8c8;
+
+    background: #fff;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    color: #555;
+}
+
+.guest-item button:hover {
+    border-color: #b28b32;
+
+    color: #b28b32;
+}
+
+.guest-item span {
+    font-size: 14px;
+
+    color: #222;
+}
+
+.guest-item small {
+    display: block;
+
+    font-size: 10px;
+
+    color: #888;
+
+    margin-top: 3px;
+}
+
+.divider {
+    height: 1px;
+
+    background: #ddd;
+
+    margin: 10px 0;
+}
+
+
+/* =====================================================
+   ADD ROOM
+===================================================== */
+
+.add-room {
+    border: none;
+
+    background: transparent;
+
+    color: #b28b32;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+    margin-top: 25px;
+
+    cursor: pointer;
+
+    padding: 0;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.booking-footer {
+    background: #fff;
+
+    border-top: 1px solid #ddd;
+
+    padding: 20px 30px 28px;
+}
+
+
+/* =====================================================
+   SPECIAL CODE
+===================================================== */
+
+.special-code {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 14px 0;
+
+    border-bottom: 1px solid #ddd;
+
+    cursor: pointer;
+
+    font-size: 13px;
+
+    color: #333;
+
+    margin-bottom: 20px;
+}
+
+
+.special-dropdown {
+    position: absolute;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: calc(100% + 5px);
+
+    background: #fff;
+
+    border: 1px solid #ddd;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,.12);
+
+    display: none;
+
+    z-index: 20;
+}
+
+.special-code.open .special-dropdown {
+    display: block;
+}
+
+
+.special-option {
+    padding: 15px;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+    color: #333;
+}
+
+.special-option:hover {
+    background: #f5f5f5;
+}
+
+.special-option.selected {
+    color: #b28b32;
+}
+
+
+/* =====================================================
+   CHECK RATES
+===================================================== */
+
+.check-rates {
+    width: 100%;
+
+    height: 54px;
+
+    border: none;
+
+    background: #b28b32;
+
+    color: #fff;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+
+    cursor: pointer;
+
+    transition: .25s ease;
+}
+
+.check-rates:hover {
+    background: #8f6e25;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .booking-panel {
+        width: 100%;
+    }
+
+    .booking-content {
+        padding: 25px 22px;
+    }
+
+    .booking-footer {
+        padding: 18px 22px 25px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

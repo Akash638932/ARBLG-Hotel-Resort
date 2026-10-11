@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ARBLG | Check Rates</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@400;500&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="check-rates.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        <div class="logo-star">✦</div>
+        <div class="logo-name">ARBLG</div>
+        <div class="logo-sub">HOTEL &amp; RESORT</div>
+    </a>
+
+    <nav class="nav-links">
+        <a href="destinations.html">DESTINATIONS</a>
+        <a href="hotels.html">HOTELS</a>
+        <a href="experience.html">EXPERIENCES</a>
+        <a href="offers.html">OFFERS</a>
+        <a href="membership.html">MEMBERSHIPS</a>
+        <div class="more-menu">
+
+    <button class="more-btn" id="moreBtn">
+        MORE <span>⌃</span>
+    </button>
+
+    <div class="more-mega" id="moreMega">
+
+        <!-- LEFT GOLD BOX -->
+        <div class="more-offer">
+
+            <h2>BOOK DIRECT OFFERS</h2>
+
+            <p>
+                Exclusive offers and special promotions
+            </p>
+
+            <a href="offers.html">
+                MORE ›
+            </a>
+
+        </div>
+
+
+        <!-- MIDDLE LINKS -->
+        <div class="more-column">
+
+            <a href="dining.html">DINING</a>
+
+            <a href="meetings.html">
+                MEETINGS AND CONFERENCES
+            </a>
+
+            <a href="weddings.html">
+                TIMELESS WEDDINGS
+            </a>
+
+            <a href="holidays.html">
+                TAJ HOLIDAYS
+            </a>
+
+            <a href="safaris.html">
+                TAJ SAFARIS
+            </a>
+
+            <a href="wellness.html">
+                WELLNESS
+            </a>
+
+            <a href="gifting.html">
+                GIFTING
+            </a>
+
+        </div>
+
+
+        <!-- RIGHT LINKS -->
+        <div class="more-column">
+
+            <a href="business.html">
+                BUSINESS USERS
+            </a>
+
+            <a href="about.html">
+                ABOUT ARBLG
+            </a>
+
+            <a href="she-remains.html">
+                SHE REMAINS THE ARBLG
+            </a>
+
+            <a href="sky-view.html">
+                ARBLG SKY VIEW RESIDENCES
+            </a>
+
+            <a href="travel-stories.html">
+                TRAVEL STORIES
+            </a>
+
+            <a href="contact.html">
+                CONTACT US
+            </a>
+
+            <a href="manage-booking.html" class="manage-booking">
+                <span>›</span>
+                MANAGE YOUR BOOKING
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+    </nav>
+
+    <div class="nav-right">
+        <a href="login.html" class="login">LOGIN / JOIN</a>
+        <a href="index.html" class="book-btn">BOOK A STAY</a>
+    </div>
+
+</header>
+
+
+<!-- ================= PAGE TITLE ================= -->
+
+<section class="page-title">
+
+    <div class="title-overlay"></div>
+
+    <div class="title-content">
+        <span></span>
+        <h1>CHECK RATES</h1>
+    </div>
+
+</section>
+
+
+<!-- ================= SEARCH SUMMARY ================= -->
+
+<section class="search-summary">
+
+    <div class="search-location">
+
+        <small>HOTEL / DESTINATION</small>
+
+        <h2 id="hotelName">
+            ARBLG HOTEL &amp; RESORT
+        </h2>
+
+    </div>
+
+
+    <div class="summary-item">
+
+        <small>CHECK-IN</small>
+
+        <strong id="checkIn">
+            24 SEP 2026
+        </strong>
+
+    </div>
+
+
+    <div class="summary-item">
+
+        <small>CHECK-OUT</small>
+
+        <strong id="checkOut">
+            25 SEP 2026
+        </strong>
+
+    </div>
+
+
+    <div class="summary-item">
+
+        <small>GUESTS</small>
+
+        <strong>
+            1 Adult, 0 Child
+        </strong>
+
+    </div>
+
+
+    <button class="modify-btn" id="modifySearch">
+        MODIFY
+    </button>
+
+</section>
+
+
+<!-- ================= MAIN ================= -->
+
+<main class="rates-container">
+
+    <!-- FILTER -->
+
+    <aside class="filter-box">
+
+        <h3>FILTER BY</h3>
+
+        <div class="filter-line"></div>
+
+
+        <div class="filter-group">
+
+            <h4>ROOM TYPE</h4>
+
+            <label>
+                <input type="checkbox">
+                Deluxe Room
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Luxury Room
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Suite
+            </label>
+
+        </div>
+
+
+        <div class="filter-group">
+
+            <h4>MEAL PLAN</h4>
+
+            <label>
+                <input type="checkbox">
+                Room Only
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Breakfast Included
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Half Board
+            </label>
+
+        </div>
+
+
+        <div class="filter-group">
+
+            <h4>PRICE RANGE</h4>
+
+            <label>
+                <input type="checkbox">
+                ₹5,000 - ₹10,000
+            </label>
+
+            <label>
+                <input type="checkbox">
+                ₹10,000 - ₹20,000
+            </label>
+
+            <label>
+                <input type="checkbox">
+                ₹20,000+
+            </label>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ROOMS -->
+
+    <section class="rooms-section">
+
+        <div class="rooms-heading">
+
+            <div>
+                <h2>AVAILABLE ROOMS</h2>
+
+                <p>
+                    Select a room that suits your stay
+                </p>
+            </div>
+
+            <select id="sortRooms">
+                <option>Recommended</option>
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+            </select>
+
+        </div>
+
+
+        <!-- ROOM 1 -->
+
+        <article class="room-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1000&q=85"
+                alt="Luxury Room"
+            >
+
+            <div class="room-info">
+
+                <h3>DELUXE ROOM</h3>
+
+                <p class="room-description">
+                    Elegant accommodation with contemporary
+                    interiors and exceptional comfort.
+                </p>
+
+                <div class="room-features">
+                    <span>🛏 King Bed</span>
+                    <span>👤 2 Guests</span>
+                    <span>📐 350 sq.ft.</span>
+                </div>
+
+                <div class="room-bottom">
+
+                    <div class="price">
+
+                        <small>STARTING FROM</small>
+
+                        <strong>
+                            ₹8,500
+                        </strong>
+
+                        <span>
+                            / NIGHT + TAXES
+                        </span>
+
+                    </div>
+
+                    <button class="select-room">
+                        SELECT ROOM
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- ROOM 2 -->
+
+        <article class="room-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1000&q=85"
+                alt="Luxury Suite"
+            >
+
+            <div class="room-info">
+
+                <h3>LUXURY ROOM</h3>
+
+                <p class="room-description">
+                    Spacious rooms designed with refined details,
+                    premium amenities and beautiful views.
+                </p>
+
+                <div class="room-features">
+                    <span>🛏 King Bed</span>
+                    <span>👤 3 Guests</span>
+                    <span>📐 480 sq.ft.</span>
+                </div>
+
+                <div class="room-bottom">
+
+                    <div class="price">
+
+                        <small>STARTING FROM</small>
+
+                        <strong>
+                            ₹12,500
+                        </strong>
+
+                        <span>
+                            / NIGHT + TAXES
+                        </span>
+
+                    </div>
+
+                    <button class="select-room">
+                        SELECT ROOM
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- ROOM 3 -->
+
+        <article class="room-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1000&q=85"
+                alt="ARBLG Suite"
+            >
+
+            <div class="room-info">
+
+                <h3>ARBLG SUITE</h3>
+
+                <p class="room-description">
+                    An expansive suite offering luxurious living
+                    spaces and an elevated stay experience.
+                </p>
+
+                <div class="room-features">
+                    <span>🛏 King Bed</span>
+                    <span>👤 4 Guests</span>
+                    <span>📐 750 sq.ft.</span>
+                </div>
+
+                <div class="room-bottom">
+
+                    <div class="price">
+
+                        <small>STARTING FROM</small>
+
+                        <strong>
+                            ₹22,500
+                        </strong>
+
+                        <span>
+                            / NIGHT + TAXES
+                        </span>
+
+                    </div>
+
+                    <button class="select-room">
+                        SELECT ROOM
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-logo">
+
+     <div class="footer-logo-mark">✦</div>
+
+        <div class="footer-logo-name">
+            ARBLG
+        </div>
+
+        <div class="footer-logo-sub">
+            HOTEL &amp; RESORT
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <span>
+            © 2026 ARBLG Hotel &amp; Resort. All Rights Reserved.
+        </span>
+
+        <div>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="check-rates.js"></script>
+
+</body>
+</html>

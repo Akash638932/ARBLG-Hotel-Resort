@@ -1,0 +1,764 @@
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Times New Roman", serif;
+    background: #ffffff;
+    color: #26384b;
+}
+
+
+/* =====================================================
+   MAIN PAGE
+===================================================== */
+
+.login-page {
+    min-height: 100vh;
+    position: relative;
+    background: #fff;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   TOP LOGO
+===================================================== */
+
+.top-logo {
+    position: absolute;
+    top: 15px;
+    left: 47px;
+    width: 70px;
+    text-align: center;
+    color: #b28b35;
+    z-index: 10;
+}
+
+
+.logo-symbol {
+    font-size: 18px;
+    line-height: 14px;
+    margin-bottom: 2px;
+}
+
+
+.logo-text {
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: -2px;
+}
+
+
+/* =====================================================
+   CLOSE BUTTON
+===================================================== */
+
+.close-btn {
+    position: absolute;
+    top: 14px;
+    right: 28px;
+
+    width: 35px;
+    height: 35px;
+
+    border: 0;
+    background: transparent;
+
+    color: #b28b35;
+
+    font-size: 34px;
+    font-weight: 200;
+
+    cursor: pointer;
+
+    z-index: 20;
+}
+
+
+.close-btn:hover {
+    transform: rotate(90deg);
+    transition: 0.3s;
+}
+
+
+/* =====================================================
+   MAIN CONTAINER
+===================================================== */
+
+.login-container {
+    width: 100%;
+    max-width: 1150px;
+
+    margin: 101px auto 38px;
+
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+
+    min-height: 460px;
+}
+
+
+/* =====================================================
+   LEFT JOIN SECTION
+===================================================== */
+
+.join-section {
+    padding: 0 55px 20px;
+    text-align: center;
+}
+
+
+.join-section h1,
+.login-section h1 {
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #24384d;
+
+    margin-bottom: 12px;
+}
+
+
+/* =====================================================
+   NEUPASS
+===================================================== */
+
+.neu-pass {
+    display: inline-flex;
+    align-items: center;
+
+    margin: 0 auto 13px;
+
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+.neu-icon {
+    width: 27px;
+    height: 27px;
+
+    margin-right: 3px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    color: white;
+
+    background: linear-gradient(
+        135deg,
+        #007cff,
+        #b300ff,
+        #ff7b00
+    );
+
+    border-radius: 8px 3px 8px 3px;
+}
+
+
+.neu-black {
+    color: #17213b;
+}
+
+
+.neu-orange {
+    color: #ff641c;
+}
+
+
+.member-benefits-title {
+    color: #a47e32;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-bottom: 14px;
+}
+
+
+/* =====================================================
+   BENEFITS GRID
+===================================================== */
+
+.benefits-grid {
+    width: 385px;
+    max-width: 100%;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 21px;
+    row-gap: 24px;
+
+    text-align: left;
+}
+
+
+.benefit {
+    min-width: 0;
+}
+
+
+.benefit img {
+    width: 100%;
+    height: 92px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.benefit p {
+    margin-top: 4px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+    line-height: 18px;
+
+    color: #5d6470;
+}
+
+
+/* =====================================================
+   DIVIDER
+===================================================== */
+
+.divider {
+    width: 1px;
+    background: #d9d9d9;
+}
+
+
+/* =====================================================
+   GOLD BUTTON
+===================================================== */
+
+.gold-btn {
+    border: none;
+
+    background: #b28b35;
+    color: white;
+
+    height: 44px;
+    padding: 0 28px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+
+.gold-btn:hover {
+    background: #947128;
+}
+
+
+/* =====================================================
+   JOIN BUTTON
+===================================================== */
+
+.join-btn {
+    margin-top: 22px;
+    min-width: 116px;
+}
+
+
+/* =====================================================
+   RIGHT LOGIN SECTION
+===================================================== */
+
+.login-section {
+    padding: 0 55px;
+
+    text-align: center;
+}
+
+
+.login-section h1 {
+    margin-bottom: 106px;
+}
+
+
+/* =====================================================
+   LOGIN TABS
+===================================================== */
+
+.login-tabs {
+    width: 490px;
+    max-width: 100%;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    border-bottom: 1px solid #a9a9a9;
+}
+
+
+.login-tab {
+    border: none;
+    background: transparent;
+
+    padding: 0 5px 7px;
+
+    color: #5f7080;
+
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+
+    line-height: 16px;
+
+    cursor: pointer;
+}
+
+
+.login-tab.active {
+    color: #b28b35;
+}
+
+
+/* =====================================================
+   LOGIN FORM
+===================================================== */
+
+.login-form {
+    width: 490px;
+    max-width: 100%;
+
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   INPUT
+===================================================== */
+
+.input-row {
+    height: 67px;
+
+    border-bottom: 1px solid #999;
+
+    display: flex;
+    align-items: center;
+
+    text-align: left;
+}
+
+
+.india-flag {
+    font-size: 20px;
+    margin-right: 7px;
+}
+
+
+.country-code {
+    color: #4c5865;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    margin-right: 14px;
+}
+
+
+.input-row input {
+    flex: 1;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+
+    color: #33465a;
+}
+
+
+.input-row input::placeholder {
+    color: #526477;
+}
+
+
+/* =====================================================
+   AGREEMENT
+===================================================== */
+
+.agreement {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+
+    margin-top: 28px;
+
+    text-align: left;
+}
+
+
+.agreement input {
+    appearance: none;
+
+    width: 21px;
+    height: 21px;
+
+    flex-shrink: 0;
+
+    border: 1px solid #b28b35;
+
+    margin: 0 18px 0 38px;
+
+    cursor: pointer;
+}
+
+
+.agreement input:checked {
+    background: #b28b35;
+
+    position: relative;
+}
+
+
+.agreement input:checked::after {
+    content: "✓";
+
+    color: white;
+
+    position: absolute;
+
+    left: 4px;
+    top: 0px;
+
+    font-size: 14px;
+}
+
+
+.agreement label {
+    font-family: Arial, sans-serif;
+
+    color: #606a76;
+
+    font-size: 12px;
+    line-height: 18px;
+}
+
+
+.agreement a {
+    color: #b28b35;
+    text-decoration: none;
+}
+
+
+/* =====================================================
+   CONTINUE BUTTON
+===================================================== */
+
+.continue-btn {
+    margin-top: 45px;
+
+    min-width: 118px;
+}
+
+
+/* =====================================================
+   PARTNER LOGOS
+===================================================== */
+
+.partner-logos {
+    width: 410px;
+    max-width: 100%;
+
+    margin: 46px auto 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: #c4a76d;
+
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+}
+
+
+.partner-logos span {
+    text-align: center;
+}
+
+
+.partner-logos small {
+    font-size: 5px;
+}
+
+
+.mini-neu {
+    color: #e85a2a;
+    font-size: 10px;
+}
+
+
+/* =====================================================
+   CHAT BUTTON
+===================================================== */
+
+.chat-button {
+    position: fixed;
+
+    right: 24px;
+    bottom: 25px;
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+
+    border: 4px solid white;
+
+    background: #b28b35;
+
+    color: white;
+
+    font-size: 27px;
+
+    cursor: pointer;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+
+    z-index: 50;
+}
+
+
+.chat-button span {
+    display: block;
+    transform: rotate(-20deg);
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .login-container {
+        max-width: 700px;
+
+        grid-template-columns: 1fr;
+
+        margin-top: 100px;
+    }
+
+
+    .divider {
+        width: 80%;
+        height: 1px;
+
+        margin: 40px auto;
+    }
+
+
+    .login-section h1 {
+        margin-bottom: 60px;
+    }
+
+
+    .join-section,
+    .login-section {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .top-logo {
+        left: 20px;
+    }
+
+
+    .close-btn {
+        right: 12px;
+    }
+
+
+    .login-container {
+        margin-top: 90px;
+    }
+
+
+    .join-section h1,
+    .login-section h1 {
+        font-size: 21px;
+    }
+
+
+    .benefits-grid {
+        width: 100%;
+
+        column-gap: 12px;
+        row-gap: 20px;
+    }
+
+
+    .benefit img {
+        height: 85px;
+    }
+
+
+    .login-tabs {
+        width: 100%;
+    }
+
+
+    .login-form {
+        width: 100%;
+    }
+
+
+    .agreement {
+        align-items: flex-start;
+    }
+
+
+    .agreement input {
+        margin-left: 0;
+        margin-right: 12px;
+    }
+
+
+    .partner-logos {
+        width: 100%;
+    }
+
+
+    .chat-button {
+        width: 45px;
+        height: 45px;
+
+        right: 15px;
+        bottom: 15px;
+    }
+
+}
+
+/* ===============================
+   ARBLG LOGIN LOGO
+================================ */
+
+.arblg-logo {
+    position: absolute;
+    top: 18px;
+    left: 45px;
+
+    width: 145px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-decoration: none;
+    line-height: 1;
+    z-index: 10;
+}
+
+.arblg-star {
+    color: #c9a85c;
+    font-size: 20px;
+    line-height: 18px;
+    margin-bottom: 5px;
+}
+
+.arblg-name {
+    color: #b18b32;
+
+    font-family: "Times New Roman", serif;
+
+    font-size: 34px;
+    font-weight: 500;
+
+    letter-spacing: 7px;
+
+    margin-left: 7px;
+}
+
+.arblg-subtitle {
+    color: #b18b32;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 7px;
+    font-weight: 600;
+
+    letter-spacing: 3.5px;
+
+    margin-top: 7px;
+    margin-left: 3px;
+}
+
+
+/* ===============================
+   PARTNER LOGOS - ARBLG
+================================ */
+
+.partner-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 95px;
+    margin-top: 35px;
+}
+
+.partner-arblg {
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #b18b32;
+}
+
+.partner-arblg b {
+    font-size: 14px;
+    line-height: 15px;
+    margin-bottom: 3px;
+}
+
+.partner-arblg strong {
+    font-family: "Times New Roman", serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    white-space: nowrap;
+}
+
+.partner-arblg small {
+    font-family: Arial, sans-serif;
+    font-size: 6px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    white-space: nowrap;
+}

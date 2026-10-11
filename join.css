@@ -1,0 +1,481 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman", Georgia, serif;
+    background: #ffffff;
+    color: #26364a;
+}
+
+
+/* ==============================
+   PAGE
+============================== */
+
+.join-page {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    overflow: hidden;
+}
+
+
+/* ==============================
+   ARBLG LOGO
+============================== */
+
+.arblg-logo {
+    position: absolute;
+    top: 12px;
+    left: 45px;
+
+    width: 115px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-decoration: none;
+    color: #ffffff;
+
+    z-index: 10;
+}
+
+.logo-star {
+    color: #c29b45;
+    font-size: 21px;
+    line-height: 18px;
+}
+
+.logo-name {
+    color: #b58b32;
+
+    font-size: 32px;
+    letter-spacing: 7px;
+
+    margin-left: 7px;
+}
+
+.logo-sub {
+    color: #b58b32;
+
+    font-family: Arial, sans-serif;
+    font-size: 7px;
+
+    letter-spacing: 3px;
+
+    margin-top: 2px;
+}
+
+
+/* ==============================
+   CLOSE BUTTON
+============================== */
+
+.close-btn {
+    position: absolute;
+
+    top: 14px;
+    right: 27px;
+
+    width: 35px;
+    height: 35px;
+
+    border: none;
+    background: transparent;
+
+    color: #b88e36;
+
+    font-size: 34px;
+    font-weight: 200;
+
+    cursor: pointer;
+
+    line-height: 30px;
+}
+
+
+/* ==============================
+   MAIN LOGIN BOX
+============================== */
+
+.login-box {
+    width: 485px;
+
+    margin: 155px auto 0;
+
+    text-align: center;
+}
+
+
+/* ==============================
+   TITLE
+============================== */
+
+.login-box h1 {
+    font-size: 24px;
+    font-weight: 400;
+
+    color: #26364a;
+
+    margin-bottom: 30px;
+}
+
+
+/* ==============================
+   NEUPASS
+============================== */
+
+.neu-logo {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 48px;
+}
+
+.neu-icon {
+    width: 31px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+
+    font-style: italic;
+
+    background: linear-gradient(
+        135deg,
+        #4e9cff,
+        #933cff,
+        #ff5c25,
+        #ffae00
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.neu-text {
+    font-family: Arial, sans-serif;
+
+    font-size: 25px;
+    font-weight: 600;
+
+    color: #25204c;
+
+    margin-left: 5px;
+}
+
+.neu-text span {
+    color: #f06a20;
+    font-weight: 400;
+}
+
+
+/* ==============================
+   TABS
+============================== */
+
+.login-tabs {
+    width: 485px;
+
+    display: flex;
+
+    border-bottom: 1px solid #d4d4d4;
+
+    margin-bottom: 34px;
+}
+
+.tab {
+    width: 50%;
+
+    border: none;
+    background: transparent;
+
+    padding: 0 0 14px;
+
+    color: #26364a;
+
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+
+    cursor: pointer;
+
+    position: relative;
+}
+
+.tab.active {
+    color: #b28b43;
+}
+
+.tab.active::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: -1px;
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background: #b28b43;
+}
+
+
+/* ==============================
+   INPUT
+============================== */
+
+.input-row {
+    width: 472px;
+
+    height: 42px;
+
+    margin: 0 auto 40px;
+
+    display: flex;
+    align-items: center;
+
+    border-bottom: 1px solid #999999;
+
+    text-align: left;
+}
+
+.flag {
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.country-code {
+    color: #536071;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+
+    margin-right: 10px;
+
+    white-space: nowrap;
+}
+
+.input-row input {
+    width: 100%;
+
+    height: 40px;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: #26364a;
+
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+}
+
+.input-row input::placeholder {
+    color: #657084;
+    opacity: 1;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* ==============================
+   TERMS
+============================== */
+
+.terms {
+    width: 472px;
+
+    margin: 0 auto 47px;
+
+    display: flex;
+    align-items: center;
+
+    text-align: left;
+}
+
+.terms input {
+    appearance: none;
+
+    width: 22px;
+    height: 22px;
+
+    border: 1px solid #b99242;
+
+    background: #fff;
+
+    cursor: pointer;
+
+    flex-shrink: 0;
+
+    margin-right: 18px;
+}
+
+.terms input:checked {
+    background: #b99242;
+
+    position: relative;
+}
+
+.terms input:checked::after {
+    content: "✓";
+
+    color: white;
+
+    position: absolute;
+
+    left: 4px;
+    top: 0px;
+
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+.terms label {
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    color: #536071;
+
+    line-height: 20px;
+}
+
+.terms a {
+    color: #b28b43;
+
+    text-decoration: none;
+}
+
+
+/* ==============================
+   CONTINUE BUTTON
+============================== */
+
+.continue-btn {
+    width: 126px;
+    height: 44px;
+
+    border: none;
+
+    background: #c6aa70;
+    color: white;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.continue-btn:hover {
+    background: #ad8c4d;
+}
+
+.continue-btn:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
+
+/* ==============================
+   CHAT
+============================== */
+
+.chat-btn {
+    position: fixed;
+
+    right: 24px;
+    bottom: 25px;
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+
+    border: 4px solid white;
+
+    background: #b68e36;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 27px;
+
+    cursor: pointer;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.chat-btn span {
+    transform: rotate(-25deg);
+}
+
+
+/* ==============================
+   RESPONSIVE
+============================== */
+
+@media (max-width: 700px) {
+
+    .arblg-logo {
+        left: 20px;
+    }
+
+    .login-box {
+        width: 90%;
+        margin-top: 130px;
+    }
+
+    .login-tabs {
+        width: 100%;
+    }
+
+    .input-row {
+        width: 100%;
+    }
+
+    .terms {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .terms input {
+        margin-top: 1px;
+    }
+
+    .login-box h1 {
+        font-size: 21px;
+    }
+
+    .neu-logo {
+        margin-bottom: 38px;
+    }
+
+    .chat-btn {
+        right: 15px;
+        bottom: 15px;
+    }
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ARBLG - Login / Join</title>
+
+    <link rel="stylesheet" href="join.css">
+</head>
+
+<body>
+
+    <div class="join-page">
+
+        <!-- TOP LOGO -->
+        <a href="index.html" class="arblg-logo">
+            <span class="logo-star">✦</span>
+            <span class="logo-name">ARBLG</span>
+            <span class="logo-sub">HOTEL & RESORT</span>
+        </a>
+
+        <!-- CLOSE -->
+        <button class="close-btn" id="closeBtn">&times;</button>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="login-box">
+
+            <h1>LOGIN / JOIN</h1>
+
+            <!-- NEUPASS STYLE LOGO -->
+            <div class="neu-logo">
+                <span class="neu-icon">N</span>
+                <span class="neu-text">NEU<span>PASS</span></span>
+            </div>
+
+
+            <!-- TABS -->
+            <div class="login-tabs">
+
+                <button class="tab active" id="mobileTab">
+                    MOBILE<br>NUMBER
+                </button>
+
+                <button class="tab" id="emailTab">
+                    EMAIL<br>ADDRESS
+                </button>
+
+            </div>
+
+
+            <!-- FORM -->
+            <form id="joinForm">
+
+                <!-- MOBILE -->
+                <div class="input-row" id="mobileBox">
+
+                    <span class="flag">🇮🇳</span>
+
+                    <span class="country-code">+91⌄</span>
+
+                    <input
+                        type="tel"
+                        id="mobileInput"
+                        placeholder="Enter your mobile number"
+                        maxlength="10"
+                    >
+
+                </div>
+
+
+                <!-- EMAIL -->
+                <div class="input-row hidden" id="emailBox">
+
+                    <input
+                        type="email"
+                        id="emailInput"
+                        placeholder="Enter your email address"
+                    >
+
+                </div>
+
+
+                <!-- TERMS -->
+                <div class="terms">
+
+                    <input
+                        type="checkbox"
+                        id="termsCheck"
+                    >
+
+                    <label for="termsCheck">
+                        By continuing you agree to our
+                        <a href="#">Terms of Use</a>
+                        and
+                        <a href="#">Privacy Policy</a>
+                    </label>
+
+                </div>
+
+
+                <!-- CONTINUE -->
+                <button
+                    type="submit"
+                    class="continue-btn"
+                    id="continueBtn"
+                >
+                    CONTINUE
+                </button>
+
+            </form>
+
+        </main>
+
+
+        <!-- BOTTOM CHAT -->
+        <button class="chat-btn" id="chatBtn">
+            <span>⌁</span>
+        </button>
+
+    </div>
+
+    <script src="join.js"></script>
+
+</body>
+</html>

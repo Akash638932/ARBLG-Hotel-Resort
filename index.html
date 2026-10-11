@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ARBLG Style Header</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+<header class="navbar">
+
+    <!-- Logo -->
+    <a href="#" class="logo">
+        <span class="logo-mark">✦</span>
+        <span class="logo-name">ARBLG</span>
+        <span class="logo-subtitle">HOTEL & RESORT</span>
+    </a>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <ul class="nav-links">
+            <li><a href="destinations.html">DESTINATIONS</a></li>
+            <li><a href="hotels.html">HOTELS</a></li>
+            <li><a href="experience.html">EXPERIENCES</a></li>
+            <li><a href="offers.html">OFFERS</a></li>
+            <li><a href="membership.html">MEMBERSHIPS</a></li>
+
+            <div class="more-menu">
+
+    <button class="more-btn" id="moreBtn">
+        MORE <span>⌃</span>
+    </button>
+
+    <div class="more-mega" id="moreMega">
+
+        <!-- LEFT GOLD BOX -->
+        <div class="more-offer">
+
+            <h2>BOOK DIRECT OFFERS</h2>
+
+            <p>
+                Exclusive offers and special promotions
+            </p>
+
+            <a href="offers.html">
+                MORE ›
+            </a>
+
+        </div>
+
+
+        <!-- MIDDLE LINKS -->
+        <div class="more-column">
+
+            <a href="dining.html">DINING</a>
+
+            <a href="meetings.html">
+                MEETINGS AND CONFERENCES
+            </a>
+
+            <a href="weddings.html">
+                TIMELESS WEDDINGS
+            </a>
+
+            <a href="holidays.html">
+                ARBLG HOLIDAYS
+            </a>
+
+            <a href="safaris.html">
+                ARBLG SAFARIS
+            </a>
+
+            <a href="wellness.html">
+                WELLNESS
+            </a>
+
+            <a href="gifting.html">
+                GIFTING
+            </a>
+
+        </div>
+
+
+        <!-- RIGHT LINKS -->
+        <div class="more-column">
+
+            <a href="business.html">
+                BUSINESS USERS
+            </a>
+
+            <a href="about.html">
+                ABOUT ARBLG
+            </a>
+
+            <a href="she-remains.html">
+                SHE REMAINS THE ARBLG
+            </a>
+
+            <a href="sky-view.html">
+                ARBLG SKY VIEW RESIDENCES
+            </a>
+
+            <a href="travel-stories.html">
+                TRAVEL STORIES
+            </a>
+
+            <a href="contact.html">
+                CONTACT US
+            </a>
+
+            <a href="manage-booking.html" class="manage-booking">
+                <span>›</span>
+                MANAGE YOUR BOOKING
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+        </ul>
+    </nav>
+
+    <!-- Right Side -->
+   <div class="nav-right">
+    <a href="login.html" class="login">LOGIN / JOIN</a>
+
+    <button class="book-btn" id="bookStayBtn">
+        BOOK A STAY
+    </button>
+</div>
+
+</header>
+
+<!-- BOOK A STAY PANEL -->
+<div class="booking-panel" id="bookingPanel">
+
+    <div class="booking-top">
+        <button id="closeBooking">
+            CLOSE ✕
+        </button>
+    </div>
+
+    <div class="booking-content">
+
+        <div class="hotel-search">
+            <span>⌕</span>
+            <input
+                type="text"
+                placeholder="Find a Hotel or Destination"
+            >
+        </div>
+
+        <div class="date-row">
+
+            <div>
+                <label>CHECK-IN</label>
+                <input type="text" value="24 Sep 2026">
+            </div>
+
+            <span>—</span>
+
+            <div>
+                <label>CHECK-OUT</label>
+                <input type="text" value="25 Sep 2026">
+            </div>
+
+        </div>
+
+        <div class="rooms-label">
+            ROOMS &amp; GUESTS
+        </div>
+
+        <div class="rooms-guests">
+            <span>♧</span>
+            <span>
+                <b id="adultCountText">1</b> Adult,
+                <b id="childCountText">0</b> Child -
+                <b id="roomCountText">1</b> Room
+            </span>
+            <span>⌃</span>
+        </div>
+
+        <h3 class="room-title">Room 1</h3>
+
+        <div class="guest-box">
+
+            <div class="guest-item">
+                <button id="adultMinus">−</button>
+
+                <span>
+                    <b id="adultCount">1</b> Adult
+                </span>
+
+                <button id="adultPlus">+</button>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="guest-item">
+                <button id="childMinus">−</button>
+
+                <span>
+                    <b id="childCount">0</b> Child
+                    <small>(0 - 12 yrs)</small>
+                </span>
+
+                <button id="childPlus">+</button>
+            </div>
+
+        </div>
+
+        <button class="add-room" id="addRoom">
+            ADD MORE ROOMS
+        </button>
+
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="booking-footer">
+
+        <div class="special-code" id="specialCode">
+
+            <span>Special Code</span>
+            <span>⌃</span>
+
+            <div class="special-dropdown" id="specialDropdown">
+
+                <div class="special-option selected">
+                    ✓ &nbsp;&nbsp; None
+                </div>
+
+                <div class="special-option">
+                    Corporate Access Code
+                </div>
+
+                <div class="special-option">
+                    Travel Agency Code
+                </div>
+
+                <div class="special-option">
+                    Business Connect Code
+                </div>
+
+            </div>
+
+        </div>
+
+        <button class="check-rates" id="checkRatesBtn">
+    CHECK RATES
+</button>
+
+    </div>
+
+</div>
+
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+
+        <p class="hero-small">WELCOME TO ARBLG</p>
+
+        <h1>
+            A WORLD OF<br>
+            <span>TIMELESS LUXURY</span>
+        </h1>
+
+        <p class="hero-description">
+            Exceptional stays, unforgettable experiences
+            and moments made exclusively for you.
+        </p>
+
+        <a href="#" class="hero-btn">DISCOVER ARBLG</a>
+
+    </div>
+
+    <!-- Search -->
+    <button class="search-btn" aria-label="Search">
+        <span>⌕</span>
+    </button>
+
+</section>
+
+    <!-- Pride Section -->
+<section class="pride-section">
+
+    <div class="pride-logo">ARBLG</div>
+
+    <h1 class="pride-title">
+        <span></span>
+        INDIA’S PRIDE, WORLD’S STRONGEST
+        <span></span>
+    </h1>
+
+    <p class="pride-subtext">
+        ARBLG has yet again been recognised as World’s Strongest Hotel Brand and India’s
+        Strongest Brand, across sectors, by Brand Finance 2026 Reports
+    </p>
+
+    <div class="pride-image">
+        <img src="https://images.pexels.com/photos/1001965/pexels-photo-1001965.jpeg?cs=srgb&dl=pexels-osho-1001965.jpg&fm=jpg" alt="Taj Palace">
+    </div>
+
+</section>
+
+<!-- Latest Offers Section -->
+<section class="offers-section">
+
+    <div class="offers-container">
+
+        <div class="offers-left">
+            <div class="line"></div>
+            <h2>LATEST OFFERS</h2>
+        </div>
+
+        <div class="offers-right">
+            <p>
+            Dive into cool adventures at our picture-perfect destinations with ARBLG Hotels.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+<!-- Offer Cards -->
+<section class="offer-cards-section">
+
+    <div class="cards-container">
+
+        <!-- Card 1 -->
+        <div class="offer-card">
+            <div class="image-wrapper">
+                <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2" alt="">
+            </div>
+            <div class="card-content">
+                <h3>SUITE SURPRISES - MEMBER ONLY</h3>
+                <a href="#">MORE ></a>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="offer-card">
+            <div class="image-wrapper">
+                <img src="https://wallpapercave.com/wp/wp10535542.jpg" alt="">
+            </div>
+            <div class="card-content">
+                <h3>FESTIVALS OF INDIA</h3>
+                <a href="#">MORE ></a>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="offer-card">
+            <div class="image-wrapper">
+                <img src="https://www.decorilla.com/online-decorating/wp-content/uploads/2021/05/Luxury-hotel-interior-design-on-the-water-1.jpeg" alt="">
+            </div>
+            <div class="card-content">
+                <h3>INDIA WITH ARBLG</h3>
+                <a href="#">MORE ></a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Latest Offers Section -->
+<section class="offers-section">
+
+    <div class="offers-container">
+
+        <div class="offers-left">
+            <div class="line"></div>
+            <h2>LATEST OFFERS</h2>
+        </div>
+
+        <div class="offers-right">
+            <p>
+            Dive into cool adventures at our picture-perfect destinations with ARBLG Hotels.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="offer-cards-section">
+
+    <div class="slider-wrapper">
+        <div class="arrow left" onclick="scrollLeftBtn()">&#10094;</div>
+        <div class="cards-container" id="slider">
+
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="image-box">
+                    <img src="https://www.decorilla.com/online-decorating/wp-content/uploads/2021/05/Luxury-hotel-interior-design-on-the-water-1.jpeg">
+                </div>
+                <div class="content-box">
+                    <h3>FESTIVALS OF INDIA</h3>
+                    <a href="#">MORE ></a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="image-box">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945">
+                </div>
+                <div class="content-box">
+                    <h3>SUITE SURPRISES</h3>
+                    <a href="#">MORE ></a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="image-box">
+                    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b">
+                </div>
+                <div class="content-box">
+                    <h3>INDIA WITH ARBLG</h3>
+                    <a href="#">MORE ></a>
+                </div>
+            </div>
+
+            <!-- Extra Card -->
+            <div class="card">
+                <div class="image-box">
+                    <img src="https://wallpaperaccess.com/full/8183916.jpg">
+                </div>
+                <div class="content-box">
+                    <h3>LUXURY ESCAPE</h3>
+                    <a href="#">MORE ></a>
+                </div>
+            </div>
+             <!-- Extra Card -->
+            <div class="card">
+                <div class="image-box">
+                    <img src="https://wallpaperaccess.com/full/7148774.jpg">
+                </div>
+                <div class="content-box">
+                    <h3>LUXURY ESCAPE</h3>
+                    <a href="#">MORE ></a>
+                </div>
+            </div>
+
+
+             <!-- Extra Card -->
+            <div class="card">
+                <div class="image-box">
+                    <img src="https://static.prod.r53.tablethotels.com/media/hotels/slideshow_images_staged/large/1491074.jpg">
+                </div>
+                <div class="content-box">
+                    <h3>LUXURY ESCAPE</h3>
+                    <a href="#">MORE ></a>
+                </div>
+            </div>
+
+
+             <!-- Extra Card -->
+            <div class="card">
+                <div class="image-box">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.RcFMLenADvUQvFGoowtp8AHaE8?w=1215&h=810&rs=1&pid=ImgDetMain&o=7&rm=3">
+                </div>
+                <div class="content-box">
+                    <h3>LUXURY ESCAPE</h3>
+                    <a href="#">MORE ></a>
+                </div>
+            </div>
+
+
+
+             <!-- Extra Card -->
+            <div class="card">
+                <div class="image-box">
+                    <img src="https://luxuryhoteldeals.travel/wp-content/uploads/2020/11/RCTOKYO_00447.jpg">
+                </div>
+                <div class="content-box">
+                    <h3>LUXURY ESCAPE</h3>
+                    <a href="#">MORE ></a>
+                </div>
+            </div>
+
+             <!-- Extra Card -->
+            <div class="card">
+                <div class="image-box">
+                    <img src="https://cache.marriott.com/content/dam/marriott-renditions/DOHJB/dohjb-king-2578-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1215px:*">
+                </div>
+                <div class="content-box">
+                    <h3>LUXURY ESCAPE</h3>
+                    <a href="#">MORE ></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="arrow right" onclick="scrollRightBtn()">&#10095;</div>
+    </div>
+
+</section>
+
+        
+<div class="arrow left" onclick="scrollLeftBtn()">&#10094;</div>
+<div class="arrow right" onclick="scrollRightBtn()">&#10095;</div>
+
+<div class="slider-area">
+         <!-- Background Image -->
+    <div class="background">
+    
+<section class="exclusive-section">
+
+<div class="top-content">
+
+<div class="heading">
+<span class="line"></span>
+<h1>EXCLUSIVELY <br> FOR YOU</h1>
+</div>
+
+<div class="description">
+<p>
+From quiet mornings to lingering sunsets, romance unfolds 
+in its own rhythm. Let ARBLG craft a celebration of love 
+that feels timeless in spirit and unforgettable in experience.
+</p>
+</div>
+
+</div>
+
+
+<div class="slider-area">
+
+<div class="background" id="bgImage"></div>
+
+
+<div class="side-panel left">
+<div class="arrow " onclick="prevSlide()">❮</div>
+
+<span id="leftText">TIMELESS WEDDINGS</span>
+</div>
+
+
+
+
+
+<div class="main-card">
+
+<img id="mainImage"
+src="https://images.unsplash.com/photo-1519741497674-611481863552">
+
+<div class="white-box">
+
+<h3 id="title">ROMANTIC STAYS</h3>
+
+<p id="desc">
+From quiet mornings to lingering sunsets, romance unfolds in its
+own rhythm.
+</p>
+
+<a href="#">MORE ></a>
+
+</div>
+
+</div>
+
+<div class="side-panel right">
+<span id="rightText">ARBLG HOLIDAYS</span>
+<div class="arrow" onclick="nextSlide()">❯</div>
+</div>
+
+
+</div>
+</section>
+
+<!-- Latest Offers Section -->
+<section class="offers-section">
+
+    <div class="offers-container">
+
+        <div class="offers-left">
+            <div class="line"></div>
+            <h2>Our Legendary<br>Restaurant Brands<br/></h2>
+        </div>
+
+        <div class="offers-right">
+            <p>
+            Step into the realm of our culinary legends where a symphony of flavours enchants your taste buds, ambience embraces you in a tapestry of elegance and the genuine warmth of our service leaves you feeling truly indulged.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="offer-cards-section">
+
+    <div class="slider-wrapper">
+        <div class="arrow left" onclick="scrollLeftBtn()">&#10094;</div>
+        <div class="cards-container" id="slider">
+
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="image-box">
+                    <img src="https://www.decorilla.com/online-decorating/wp-content/uploads/2021/05/Luxury-hotel-interior-design-on-the-water-1.jpeg">
+                </div>
+                <div class="content-box">
+                    <h3>FESTIVALS OF INDIA</h3>
+                    <a href="#">MORE ></a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="image-box">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945">
+                </div>
+                <div class="content-box">
+                    <h3>SUITE SURPRISES</h3>
+                    <a href="#">MORE ></a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="image-box">
+                    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b">
+                </div>
+                <div class="content-box">
+                    <h3>INDIA WITH ARBLG</h3>
+                    <a href="#">MORE ></a>
+                </div>
+            </div>
+
+            <!-- Extra Card -->
+            <div class="card">
+                <div class="image-box">
+                    <img src="https://wallpaperaccess.com/full/8183916.jpg">
+                </div>
+                <div class="content-box">
+                    <h3>LUXURY ESCAPE</h3>
+                    <a href="#">MORE ></a>
+                </div>
+            </div>
+             <!-- Extra Card -->
+            <div class="card">
+                <div class="image-box">
+                    <img src="https://wallpaperaccess.com/full/7148774.jpg">
+                </div>
+                <div class="content-box">
+                    <h3>LUXURY ESCAPE</h3>
+                    <a href="#">MORE ></a>
+                </div>
+            </div>
+
+
+             <!-- Extra Card -->
+            <div class="card">
+                <div class="image-box">
+                    <img src="https://static.prod.r53.tablethotels.com/media/hotels/slideshow_images_staged/large/1491074.jpg">
+                </div>
+                <div class="content-box">
+                    <h3>LUXURY ESCAPE</h3>
+                    <a href="#">MORE ></a>
+                </div>
+            </div>
+
+
+             <!-- Extra Card -->
+            <div class="card">
+                <div class="image-box">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.RcFMLenADvUQvFGoowtp8AHaE8?w=1215&h=810&rs=1&pid=ImgDetMain&o=7&rm=3">
+                </div>
+                <div class="content-box">
+                    <h3>LUXURY ESCAPE</h3>
+                    <a href="#">MORE ></a>
+                </div>
+            </div>
+
+
+
+             <!-- Extra Card -->
+            <div class="card">
+                <div class="image-box">
+                    <img src="https://luxuryhoteldeals.travel/wp-content/uploads/2020/11/RCTOKYO_00447.jpg">
+                </div>
+                <div class="content-box">
+                    <h3>LUXURY ESCAPE</h3>
+                    <a href="#">MORE ></a>
+                </div>
+            </div>
+
+             <!-- Extra Card -->
+            <div class="card">
+                <div class="image-box">
+                    <img src="https://cache.marriott.com/content/dam/marriott-renditions/DOHJB/dohjb-king-2578-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1215px:*">
+                </div>
+                <div class="content-box">
+                    <h3>LUXURY ESCAPE</h3>
+                    <a href="#">MORE ></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="arrow right" onclick="scrollRightBtn()">&#10095;</div>
+    </div>
+
+</section>
+
+<!-- Latest Offers Section -->
+<section class="offers-section">
+
+    <div class="offers-container">
+
+        <div class="offers-left">
+            <div class="line"></div>
+            <h2>Our Legendary<br>Restaurant Brands<br/></h2>
+        </div>
+
+        <div class="offers-right">
+            <p>
+            Step into the realm of our culinary legends where a symphony of flavours enchants your taste buds, ambience embraces you in a tapestry of elegance and the genuine warmth of our service leaves you feeling truly indulged.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="offer-cards-section">
+
+    <div class="slider-wrapper">
+        <div class="arrow left" onclick="scrollLeftBtn()">&#10094;</div>
+        <div class="cards-container" id="slider">
+
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="image-box">
+                    <img src="https://www.decorilla.com/online-decorating/wp-content/uploads/2021/05/Luxury-hotel-interior-design-on-the-water-1.jpeg">
+                </div>
+                <div class="content-box">
+                    <h3>FESTIVALS OF INDIA</h3>
+                    <a href="#">MORE ></a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="image-box">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945">
+                </div>
+                <div class="content-box">
+                    <h3>SUITE SURPRISES</h3>
+                    <a href="#">MORE ></a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="image-box">
+                    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b">
+                </div>
+                <div class="content-box">
+                    <h3>INDIA WITH ARBLG</h3>
+                    <a href="#">MORE ></a>
+                </div>
+            </div>
+
+            <!-- Extra Card -->
+            <div class="card">
+                <div class="image-box">
+                    <img src="https://wallpaperaccess.com/full/8183916.jpg">
+                </div>
+                <div class="content-box">
+                    <h3>LUXURY ESCAPE</h3>
+                    <a href="#">MORE ></a>
+                </div>
+            </div>
+             <!-- Extra Card -->
+            <div class="card">
+                <div class="image-box">
+                    <img src="https://wallpaperaccess.com/full/7148774.jpg">
+                </div>
+                <div class="content-box">
+                    <h3>LUXURY ESCAPE</h3>
+                    <a href="#">MORE ></a>
+                </div>
+            </div>
+
+
+             <!-- Extra Card -->
+            <div class="card">
+                <div class="image-box">
+                    <img src="https://static.prod.r53.tablethotels.com/media/hotels/slideshow_images_staged/large/1491074.jpg">
+                </div>
+                <div class="content-box">
+                    <h3>LUXURY ESCAPE</h3>
+                    <a href="#">MORE ></a>
+                </div>
+            </div>
+
+
+             <!-- Extra Card -->
+            <div class="card">
+                <div class="image-box">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.RcFMLenADvUQvFGoowtp8AHaE8?w=1215&h=810&rs=1&pid=ImgDetMain&o=7&rm=3">
+                </div>
+                <div class="content-box">
+                    <h3>LUXURY ESCAPE</h3>
+                    <a href="#">MORE ></a>
+                </div>
+            </div>
+
+
+
+             <!-- Extra Card -->
+            <div class="card">
+                <div class="image-box">
+                    <img src="https://luxuryhoteldeals.travel/wp-content/uploads/2020/11/RCTOKYO_00447.jpg">
+                </div>
+                <div class="content-box">
+                    <h3>LUXURY ESCAPE</h3>
+                    <a href="#">MORE ></a>
+                </div>
+            </div>
+
+             <!-- Extra Card -->
+            <div class="card">
+                <div class="image-box">
+                    <img src="https://cache.marriott.com/content/dam/marriott-renditions/DOHJB/dohjb-king-2578-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1215px:*">
+                </div>
+                <div class="content-box">
+                    <h3>LUXURY ESCAPE</h3>
+                    <a href="#">MORE ></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="arrow right" onclick="scrollRightBtn()">&#10095;</div>
+    </div>
+
+</section>
+<!-- Latest Offers Section -->
+<section class="offers-section">
+
+    <div class="offers-container">
+
+        <div class="offers-left">
+            <div class="line"></div>
+            <h2>LATEST OFFERS</h2>
+        </div>
+
+        <div class="offers-right">
+            <p>
+            Dive into cool adventures at our picture-perfect destinations with ARBLG Hotels.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="offer-cards-section">
+
+    <div class="slider-wrapper">
+        <div class="arrow left" onclick="scrollLeftBtn()">&#10094;</div>
+        <div class="cards-container" id="slider">
+
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="image-box">
+                    <img src="https://www.decorilla.com/online-decorating/wp-content/uploads/2021/05/Luxury-hotel-interior-design-on-the-water-1.jpeg">
+                </div>
+                <div class="content-box">
+                    <h3>FESTIVALS OF INDIA</h3>
+                    <a href="#">MORE ></a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="image-box">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945">
+                </div>
+                <div class="content-box">
+                    <h3>SUITE SURPRISES</h3>
+                    <a href="#">MORE ></a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="image-box">
+                    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b">
+                </div>
+                <div class="content-box">
+                    <h3>INDIA WITH ARBLG</h3>
+                    <a href="#">MORE ></a>
+                </div>
+            </div>
+
+            <!-- Extra Card -->
+            <div class="card">
+                <div class="image-box">
+                    <img src="https://wallpaperaccess.com/full/8183916.jpg">
+                </div>
+                <div class="content-box">
+                    <h3>LUXURY ESCAPE</h3>
+                    <a href="#">MORE ></a>
+                </div>
+            </div>
+             <!-- Extra Card -->
+            <div class="card">
+                <div class="image-box">
+                    <img src="https://wallpaperaccess.com/full/7148774.jpg">
+                </div>
+                <div class="content-box">
+                    <h3>LUXURY ESCAPE</h3>
+                    <a href="#">MORE ></a>
+                </div>
+            </div>
+
+
+             <!-- Extra Card -->
+            <div class="card">
+                <div class="image-box">
+                    <img src="https://static.prod.r53.tablethotels.com/media/hotels/slideshow_images_staged/large/1491074.jpg">
+                </div>
+                <div class="content-box">
+                    <h3>LUXURY ESCAPE</h3>
+                    <a href="#">MORE ></a>
+                </div>
+            </div>
+
+
+             <!-- Extra Card -->
+            <div class="card">
+                <div class="image-box">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.RcFMLenADvUQvFGoowtp8AHaE8?w=1215&h=810&rs=1&pid=ImgDetMain&o=7&rm=3">
+                </div>
+                <div class="content-box">
+                    <h3>LUXURY ESCAPE</h3>
+                    <a href="#">MORE ></a>
+                </div>
+            </div>
+
+
+
+             <!-- Extra Card -->
+            <div class="card">
+                <div class="image-box">
+                    <img src="https://luxuryhoteldeals.travel/wp-content/uploads/2020/11/RCTOKYO_00447.jpg">
+                </div>
+                <div class="content-box">
+                    <h3>LUXURY ESCAPE</h3>
+                    <a href="#">MORE ></a>
+                </div>
+            </div>
+
+             <!-- Extra Card -->
+            <div class="card">
+                <div class="image-box">
+                    <img src="https://cache.marriott.com/content/dam/marriott-renditions/DOHJB/dohjb-king-2578-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1215px:*">
+                </div>
+                <div class="content-box">
+                    <h3>LUXURY ESCAPE</h3>
+                    <a href="#">MORE ></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="arrow right" onclick="scrollRightBtn()">&#10095;</div>
+    </div>
+
+<!-- Latest Offers Section -->
+<section class="offers-section">
+
+    <div class="offers-container">
+
+        <div class="offers-left">
+            <div class="line"></div>
+            <h2>LATEST OFFERS</h2>
+        </div>
+
+        <div class="offers-right">
+            <p>
+            Dive into cool adventures at our picture-perfect destinations with ARBLG Hotels.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="end"></section>
+
+</section>
+
+<!-- ================= ARBLG FOOTER ================= -->
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Logo -->
+        <div class="footer-logo">
+            <div class="footer-logo-mark">✦</div>
+            <div class="footer-logo-name">ARBLG</div>
+            <div class="footer-logo-sub">HOTEL & RESORT</div>
+        </div>
+
+
+        <!-- Top Footer -->
+        <div class="footer-top">
+
+            <!-- Newsletter + Contact -->
+            <div class="footer-contact">
+
+                <h4>SUBSCRIBE FOR LATEST UPDATES</h4>
+
+                <div class="subscribe-box">
+                    <input
+                        type="email"
+                        placeholder="Enter your email Address"
+                    >
+                    <button>SUBSCRIBE</button>
+                </div>
+
+                <div class="contact-grid">
+
+                    <div>
+                        <h4>FOR BOOKINGS CONTACT</h4>
+                        <p>+91 1800 111 825</p>
+                        <p>+91 22 6600 11825</p>
+                    </div>
+
+                    <div class="reservation">
+                        <p>reservations@arblg.com</p>
+                    </div>
+
+                    <div>
+                        <h4>CUSTOMER SUPPORT</h4>
+                        <p>contact@arblg.com</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="footer-links">
+
+                <div>
+                    <h4>QUICK LINKS</h4>
+
+                    <a href="#">Hotels</a>
+                    <a href="#">Dining</a>
+                    <a href="#">Wellness</a>
+                    <a href="#">Timeless Weddings</a>
+                    <a href="#">Event Venues</a>
+                    <a href="#">ARBLG Magazine</a>
+                    <a href="#">Sitemap</a>
+                </div>
+
+                <div class="links-second">
+                    <h4>&nbsp;</h4>
+
+                    <a href="#">About ARBLG</a>
+                    <a href="#">Holidays</a>
+                    <a href="#">Offers</a>
+                    <a href="#">Gifting</a>
+                    <a href="#">ARBLG InnerCircle</a>
+                    <a href="#">ARBLG Blog</a>
+                    <a href="#">Partnerships</a>
+                </div>
+
+            </div>
+
+
+            <!-- Social -->
+            <div class="connect">
+
+                <h4>CONNECT WITH US</h4>
+
+                <div class="social-icons">
+                    <a href="#">f</a>
+                    <a href="#">𝕏</a>
+                    <a href="#">◎</a>
+                    <a href="#">▶</a>
+                    <a href="#">in</a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Destination -->
+        <div class="footer-destination">
+
+            <div class="destination-title">
+                <span>DESTINATIONS</span>
+                <span>⌄</span>
+            </div>
+
+        </div>
+
+
+        <!-- Our Brands -->
+        <div class="our-brands">
+
+            <h2>OUR BRANDS</h2>
+
+            <div class="brand-list">
+
+                <span>ARBLG</span>
+                <span>ARBLG<br>RESERVE</span>
+                <span>ARBLG<br>GRAND</span>
+                <span>ARBLG<br>PALACE</span>
+                <span>ARBLG<br>SELECT</span>
+                <span>ARBLG<br>SUITES</span>
+                <span>ARBLG<br>GATEWAY</span>
+                <span>ARBLG<br>VIVANTA</span>
+                <span>ARBLG<br>GINGER</span>
+                <span>ARBLG<br>RETREAT</span>
+
+            </div>
+
+        </div>
+
+
+        <!-- Bottom Footer -->
+        <div class="footer-bottom">
+
+            <div class="copyright">
+                © 2026 ARBLG Hotels & Resorts. All Rights Reserved.
+            </div>
+
+            <div class="bottom-links">
+                <a href="#">Corporate</a>
+                <a href="#">Pressroom</a>
+                <a href="#">Work With Us</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Best Rate Guarantee</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Partners</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookies Policy</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Back To Top -->
+    <button class="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+        ↑
+    </button>
+
+
+ <!-- Message Button -->
+<button class="message-button" aria-label="Message">
+    <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYU5Ngs0h2vwcVoaSO17q8dEP6GBZ8ICBG9FEomvmoWQ&s=10"
+        alt="Message"
+    >
+</button>
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

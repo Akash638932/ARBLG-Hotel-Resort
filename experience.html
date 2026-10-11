@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ARBLG - Experiences</title>
+
+    <link rel="stylesheet" href="experience.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header class="navbar">
+
+    <!-- LOGO -->
+
+    <a href="index.html" class="logo">
+    <div class="logo-mark">✦</div>
+
+    <div class="logo-name">
+        ARBLG
+    </div>
+
+    <div class="logo-sub">
+        HOTEL &amp; RESORT
+    </div>
+</a>
+
+
+
+    <!-- NAVIGATION -->
+
+    <nav class="nav-links">
+
+        <a href="index.html">
+            DESTINATIONS
+        </a>
+
+        <a href="hotels.html">
+            HOTELS
+        </a>
+
+        <a href="experience.html" class="active">
+            EXPERIENCES
+        </a>
+
+        <a href="offers.html">
+            OFFERS
+        </a>
+
+        <a href="membership.html">
+            MEMBERSHIPS⌄
+        </a>
+
+       <div class="more-menu">
+
+    <button class="more-btn" id="moreBtn">
+        MORE <span>⌃</span>
+    </button>
+
+    <div class="more-mega" id="moreMega">
+
+        <!-- LEFT GOLD BOX -->
+        <div class="more-offer">
+
+            <h2>BOOK DIRECT OFFERS</h2>
+
+            <p>
+                Exclusive offers and special promotions
+            </p>
+
+            <a href="offers.html">
+                MORE ›
+            </a>
+
+        </div>
+
+
+        <!-- MIDDLE LINKS -->
+        <div class="more-column">
+
+            <a href="dining.html">DINING</a>
+
+            <a href="meetings.html">
+                MEETINGS AND CONFERENCES
+            </a>
+
+            <a href="weddings.html">
+                TIMELESS WEDDINGS
+            </a>
+
+            <a href="holidays.html">
+                ARBLG HOLIDAYS
+            </a>
+
+            <a href="safaris.html">
+                ARBLG SAFARIS
+            </a>
+
+            <a href="wellness.html">
+                WELLNESS
+            </a>
+
+            <a href="gifting.html">
+                GIFTING
+            </a>
+
+        </div>
+
+
+        <!-- RIGHT LINKS -->
+        <div class="more-column">
+
+            <a href="business.html">
+                BUSINESS USERS
+            </a>
+
+            <a href="about.html">
+                ABOUT ARBLG
+            </a>
+
+            <a href="she-remains.html">
+                SHE REMAINS THE ARBLG
+            </a>
+
+            <a href="sky-view.html">
+                ARBLG SKY VIEW RESIDENCES
+            </a>
+
+            <a href="travel-stories.html">
+                TRAVEL STORIES
+            </a>
+
+            <a href="contact.html">
+                CONTACT US
+            </a>
+
+            <a href="manage-booking.html" class="manage-booking">
+                <span>›</span>
+                MANAGE YOUR BOOKING
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+    </nav>
+
+
+    <!-- RIGHT NAV -->
+
+    <div class="nav-right">
+
+        <a href="login.html" class="login">
+            LOGIN / JOIN
+        </a>
+
+      <!-- RIGHT SIDE -->
+
+    <button class="book-btn" id="bookStayBtn">
+        BOOK A STAY
+    </button>
+
+</div>
+
+</header>
+
+
+<!-- ================= BOOK A STAY PANEL ================= -->
+
+<div class="booking-panel" id="bookingPanel">
+
+    <!-- TOP -->
+    <div class="booking-top">
+        <button id="closeBooking">
+            CLOSE ✕
+        </button>
+    </div>
+
+
+    <!-- CONTENT -->
+    <div class="booking-content">
+
+        <!-- HOTEL SEARCH -->
+        <div class="hotel-search">
+            <span>⌕</span>
+
+            <input
+                type="text"
+                id="hotelInput"
+                placeholder="Find a Hotel or Destination"
+            >
+        </div>
+
+
+        <!-- DATES -->
+        <div class="date-row">
+
+            <div>
+                <label>CHECK-IN</label>
+
+                <input
+                    type="date"
+                    id="checkIn"
+                >
+            </div>
+
+            <span>—</span>
+
+            <div>
+                <label>CHECK-OUT</label>
+
+                <input
+                    type="date"
+                    id="checkOut"
+                >
+            </div>
+
+        </div>
+
+
+        <!-- ROOMS LABEL -->
+        <div class="rooms-label">
+            ROOMS &amp; GUESTS
+        </div>
+
+
+        <!-- ROOM SUMMARY -->
+        <div class="rooms-guests">
+
+            <span>♧</span>
+
+            <span>
+                <b id="adultCountText">1</b> Adult,
+                <b id="childCountText">0</b> Child -
+                <b id="roomCountText">1</b> Room
+            </span>
+
+            <span>⌃</span>
+
+        </div>
+
+
+        <!-- ROOM 1 -->
+        <h3 class="room-title">
+            Room 1
+        </h3>
+
+
+        <!-- GUEST BOX -->
+        <div class="guest-box">
+
+            <!-- ADULT -->
+            <div class="guest-item">
+
+                <button id="adultMinus">
+                    −
+                </button>
+
+                <span>
+                    <b id="adultCount">1</b>
+                    Adult
+                </span>
+
+                <button id="adultPlus">
+                    +
+                </button>
+
+            </div>
+
+
+            <div class="divider"></div>
+
+
+            <!-- CHILD -->
+            <div class="guest-item">
+
+                <button id="childMinus">
+                    −
+                </button>
+
+                <span>
+                    <b id="childCount">0</b>
+                    Child
+                    <small>(0 - 12 yrs)</small>
+                </span>
+
+                <button id="childPlus">
+                    +
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ADD ROOM -->
+        <button class="add-room" id="addRoom">
+            ADD MORE ROOMS
+        </button>
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <div class="booking-footer">
+
+
+        <!-- SPECIAL CODE -->
+        <div class="special-code" id="specialCode">
+
+            <span>
+                Special Code
+            </span>
+
+            <span>
+                ⌃
+            </span>
+
+
+            <div
+                class="special-dropdown"
+                id="specialDropdown"
+            >
+
+                <div
+                    class="special-option selected"
+                    data-value="None"
+                >
+                    ✓ &nbsp;&nbsp; None
+                </div>
+
+                <div
+                    class="special-option"
+                    data-value="Corporate Access Code"
+                >
+                    Corporate Access Code
+                </div>
+
+                <div
+                    class="special-option"
+                    data-value="Travel Agency Code"
+                >
+                    Travel Agency Code
+                </div>
+
+                <div
+                    class="special-option"
+                    data-value="Business Connect Code"
+                >
+                    Business Connect Code
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CHECK RATES -->
+        <button
+            class="check-rates"
+            id="checkRatesBtn"
+        >
+            CHECK RATES
+        </button>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="experience-hero">
+
+<img
+src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=2000&q=85"
+class="hero-image"
+alt="Luxury Hotel Pool">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-title">
+        <span></span>
+        EXPERIENCES
+    </div>
+
+</section>
+
+<!-- =====================================================
+     INTRO
+===================================================== -->
+
+<section class="experience-intro">
+
+    <div class="section-heading">
+
+        <span></span>
+
+        <h1>
+            CURATED EXPERIENCES BY ARBLG
+        </h1>
+
+        <span></span>
+
+    </div>
+
+
+    <p>
+        Discover an exquisite collection of experiences—romantic escapes,
+        family delights, bold adventures and signature indulgences.
+        Each is thoughtfully crafted to immerse you in the warmth,
+        charm and elegance that define every stay.
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     EXPERIENCES
+===================================================== -->
+
+<section class="experiences-grid">
+
+
+    <!-- CARD 1 -->
+
+    <article class="experience-card">
+
+        <img
+            src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=900&q=85"
+            alt="Luxury Breakfast">
+
+        <div class="experience-title">
+
+            <span></span>
+
+            <h2>
+                CHAMPAGNE BREAKFAST IN THE
+                BOUGAINVILLEA GARDEN
+            </h2>
+
+        </div>
+
+        <p>
+            Enjoy a once-in-a-lifetime breakfast experience at
+            ARBLG Palace, surrounded by colourful bougainvilleas
+            and enchanting views...
+        </p>
+
+        <button>
+            VISIT HOTEL
+        </button>
+
+    </article>
+
+
+    <!-- CARD 2 -->
+
+    <article class="experience-card">
+
+        <img
+            src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=900&q=85"
+            alt="Water Adventure">
+
+        <div class="experience-title">
+
+            <span></span>
+
+            <h2>
+                RIDE WAVES
+            </h2>
+
+        </div>
+
+        <p>
+            At ARBLG Resort & Spa, adrenaline-seekers can enjoy
+            thrilling water adventures with recommendations
+            from our concierge...
+        </p>
+
+        <button>
+            VISIT HOTEL
+        </button>
+
+    </article>
+
+
+    <!-- CARD 3 -->
+
+    <article class="experience-card">
+
+        <img
+            src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=900&q=85"
+            alt="Luxury Dining">
+
+        <div class="experience-title">
+
+            <span></span>
+
+            <h2>
+                WATCH TOWER DINING
+            </h2>
+
+        </div>
+
+        <p>
+            Enjoy a hidden, dreamy four-course feast in a
+            charming gazebo, surrounded by beautiful views
+            and unforgettable moments...
+        </p>
+
+        <button>
+            VISIT HOTEL
+        </button>
+
+    </article>
+
+
+    <!-- CARD 4 -->
+
+    <article class="experience-card">
+
+        <img
+            src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=900&q=85"
+            alt="Sunset Experience">
+
+        <div class="experience-title">
+
+            <span></span>
+
+            <h2>
+                SUNDOWNERS AT ARBLG
+            </h2>
+
+        </div>
+
+        <p>
+            Watch the sunset in a spectacular natural setting,
+            where magical views and an intimate table setting
+            create a memorable evening...
+        </p>
+
+        <button>
+            VISIT HOTEL
+        </button>
+
+    </article>
+
+
+    <!-- CARD 5 -->
+
+    <article class="experience-card">
+
+        <img
+            src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=900&q=85"
+            alt="Canvas Painting">
+
+        <div class="experience-title">
+
+            <span></span>
+
+            <h2>
+                THE MANGROVES ON CANVAS
+            </h2>
+
+        </div>
+
+        <p>
+            Sip on refreshing cocktails and unleash your
+            creativity amidst serene natural views.
+            Let the tranquil backdrop inspire you...
+        </p>
+
+        <button>
+            VISIT HOTEL
+        </button>
+
+    </article>
+
+
+    <!-- CARD 6 -->
+
+    <article class="experience-card">
+
+        <img
+            src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=85"
+            alt="Luxury Dinner">
+
+        <div class="experience-title">
+
+            <span></span>
+
+            <h2>
+                SHIKARA DINING
+            </h2>
+
+        </div>
+
+        <p>
+            Indulge in an unforgettable dining experience,
+            where natural beauty surrounds you and every
+            detail is thoughtfully crafted...
+        </p>
+
+        <button>
+            VISIT HOTEL
+        </button>
+
+    </article>
+
+
+    <!-- =================================================
+         CARD 7
+    ================================================= -->
+
+    <article class="experience-card">
+
+        <img
+            src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=900&q=85"
+            alt="Nature Experience">
+
+        <div class="experience-title">
+
+            <span></span>
+
+            <h2>
+                NATURE ESCAPE
+            </h2>
+
+        </div>
+
+        <p>
+            Escape into nature and enjoy peaceful surroundings,
+            beautiful landscapes and a relaxing luxury retreat...
+        </p>
+
+        <button>
+            VISIT HOTEL
+        </button>
+
+    </article>
+
+
+    <!-- =================================================
+         CARD 8
+    ================================================= -->
+
+    <article class="experience-card">
+
+        <img
+            src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=900&q=85"
+            alt="Luxury Travel">
+
+        <div class="experience-title">
+
+            <span></span>
+
+            <h2>
+                JOURNEY BEYOND
+            </h2>
+
+        </div>
+
+        <p>
+            Discover new destinations, extraordinary landscapes
+            and memorable journeys designed especially for
+            discerning travellers...
+        </p>
+
+        <button>
+            VISIT HOTEL
+        </button>
+
+    </article>
+
+
+    <!-- =================================================
+         CARD 9
+    ================================================= -->
+
+    <article class="experience-card">
+
+        <img
+            src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=85"
+            alt="Mountain Experience">
+
+        <div class="experience-title">
+
+            <span></span>
+
+            <h2>
+                MOUNTAIN RETREAT
+            </h2>
+
+        </div>
+
+        <p>
+            Wake up to breathtaking mountain views and enjoy
+            an intimate luxury retreat surrounded by nature...
+        </p>
+
+        <button>
+            VISIT HOTEL
+        </button>
+
+    </article>
+
+</section>
+
+
+<!-- =====================================================
+     LOAD MORE
+===================================================== -->
+
+<div class="load-more">
+
+    <button id="loadMore">
+
+        LOAD MORE
+
+        <span>
+            ⌄
+        </span>
+
+    </button>
+
+</div>
+
+
+<!-- =====================================================
+     INNER CIRCLE
+===================================================== -->
+
+<section class="inner-section">
+
+    <!-- BACKGROUND -->
+
+    <div class="inner-bg"></div>
+
+    <!-- DARK OVERLAY -->
+
+    <div class="inner-overlay"></div>
+
+
+    <!-- LEFT -->
+
+    <button
+        class="inner-arrow left"
+        type="button"
+        aria-label="Previous slide">
+
+        ‹
+
+    </button>
+
+
+    <!-- CONTENT -->
+
+    <div class="inner-content">
+
+
+        <!-- IMAGE -->
+
+        <div class="inner-image-box">
+
+            <img
+                src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1200&q=85"
+                alt="ARBLG InnerCircle"
+                class="inner-image">
+
+        </div>
+
+
+        <!-- TEXT -->
+
+        <div class="inner-text-box">
+
+            <h2>
+                ARBLG INNERCIRCLE<br>
+                NEUPASS
+            </h2>
+
+            <p>
+                Earn and redeem NeuCoins for exclusive member
+                rates, with your Arblg InnerCircle Neupass
+                membership. Indulge in memorable...
+            </p>
+
+            <a href="#">
+                ENROL ›
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- RIGHT -->
+
+    <button
+        class="inner-arrow right"
+        type="button"
+        aria-label="Next slide">
+
+        ›
+
+    </button>
+
+</section>
+
+
+<!-- =====================================================
+     CHAT
+===================================================== -->
+
+<button
+    class="chat-button"
+    type="button"
+    aria-label="Chat">
+
+    ☰
+
+</button>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+
+    <!-- FOOTER MAIN -->
+
+    <div class="footer-main">
+
+
+        <!-- BRAND -->
+
+        <div class="footer-brand">
+
+            <!-- LOGO -->
+
+    <div class="logo">
+
+        <div class="logo-mark">✦</div>
+
+        <div class="logo-name">
+            ARBLG
+        </div>
+
+        <div class="logo-sub">
+            HOTEL & RESORT
+        </div>
+
+    </div>
+            <h4>
+                SUBSCRIBE FOR LATEST UPDATES
+            </h4>
+
+
+            <div class="subscribe">
+
+                <input
+                    type="email"
+                    placeholder="Enter your email Address">
+
+                <button>
+                    SUBSCRIBE
+                </button>
+
+            </div>
+
+
+            <h4>
+                FOR BOOKINGS CONTACT
+            </h4>
+
+            <p>
+                1-800-111-825
+            </p>
+
+            <p>
+                +91 226660 11825
+            </p>
+
+
+            <h4>
+                CUSTOMER SUPPORT
+            </h4>
+
+            <p>
+                contactArblg@Arblghotels.com
+            </p>
+
+        </div>
+
+
+        <!-- FOOTER LINKS -->
+
+        <div class="footer-links">
+
+
+            <div>
+
+                <h4>
+                    QUICK LINKS
+                </h4>
+
+                <a href="#">Hotels</a>
+
+                <a href="#">Dining</a>
+
+                <a href="#">Wellness</a>
+
+                <a href="#">Timeless Weddings</a>
+
+                <a href="#">Event Venues</a>
+
+                <a href="#">Arblg Magazine</a>
+
+                <a href="#">Sitemap</a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    &nbsp;
+                </h4>
+
+                <a href="#">About ARBLG</a>
+
+                <a href="#">Holidays</a>
+
+                <a href="#">Offers</a>
+
+                <a href="#">Gifting</a>
+
+                <a href="#">ARBLG InnerCircle</a>
+
+                <a href="#">Epicure</a>
+
+                <a href="#">ARBLG Blog</a>
+
+            </div>
+
+        </div>
+
+
+        <!-- SOCIAL -->
+
+        <div class="social">
+
+            <h4>
+                CONNECT WITH US
+            </h4>
+
+            <div class="social-icons">
+
+                <span>f</span>
+
+                <span>𝕏</span>
+
+                <span>◎</span>
+
+                <span>▶</span>
+
+                <span>in</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- DESTINATIONS -->
+
+    <div class="destinations-footer">
+
+        <span>
+            DESTINATIONS
+        </span>
+
+        <span>
+            +
+        </span>
+
+    </div>
+
+
+    <!-- BRANDS -->
+
+    <div class="brands">
+
+        <h3>
+            OUR BRANDS
+        </h3>
+
+
+        <div class="brand-list">
+
+            <span>ARBLG</span>
+
+            <span>CARIGES</span>
+
+            <span>amã</span>
+
+            <span>BRIJ</span>
+
+            <span>SELECTIONS</span>
+
+            <span>CLARKS</span>
+
+            <span>GATEWAY</span>
+
+            <span>VIVANTA</span>
+
+            <span>GINGER</span>
+
+            <span>TREE OF LIFE</span>
+
+            <span>ama</span>
+
+            <span>3min</span>
+
+            <span>SOUVENAIRE</span>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER BOTTOM -->
+
+    <div class="footer-bottom">
+
+
+        <p>
+            © 2026 ARBLG Hotels & Resort.
+            All Rights Reserved.
+        </p>
+
+
+        <div>
+
+            <a href="#">
+                Corporate
+            </a>
+
+            <a href="#">
+                Pressroom
+            </a>
+
+            <a href="#">
+                Work With Us
+            </a>
+
+            <a href="#">
+                Terms of Service
+            </a>
+
+            <a href="#">
+                Privacy Policy
+            </a>
+
+            <a href="#">
+                Cookies Policy
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script src="experience.js"></script>
+
+
+</body>
+</html>

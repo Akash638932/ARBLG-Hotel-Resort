@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login / Join | ARBLG</title>
+
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+<div class="login-page">
+
+    <!-- TOP LOGO -->
+    <a href="index.html" class="arblg-logo">
+    <span class="arblg-star">✦</span>
+    <span class="arblg-name">ARBLG</span>
+    <span class="arblg-subtitle">HOTEL & RESORT</span>
+</a>
+
+    <!-- CLOSE -->
+    <button class="close-btn" id="closeBtn">×</button>
+
+
+    <div class="login-container">
+
+        <!-- ================= LEFT : JOIN ================= -->
+
+        <section class="join-section">
+
+            <h1>NOT A MEMBER? JOIN NOW</h1>
+
+            <div class="neu-pass">
+                <span class="neu-icon">N</span>
+                <span class="neu-black">NEU</span><span class="neu-orange">PASS</span>
+            </div>
+
+            <div class="member-benefits-title">
+                MEMBER BENEFITS
+            </div>
+
+
+            <div class="benefits-grid">
+
+                <div class="benefit">
+                    <img
+                        src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=500&q=80"
+                        alt="Member Rates"
+                    >
+                    <p>Exclusive Member Rates</p>
+                </div>
+
+
+                <div class="benefit">
+                    <img
+                        src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=500&q=80"
+                        alt="Dining"
+                    >
+                    <p>Special Offers for Dining &amp; Spas</p>
+                </div>
+
+
+                <div class="benefit">
+                    <img
+                        src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=500&q=80"
+                        alt="NeuCoins"
+                    >
+                    <p>Upto 8% NeuCoins</p>
+                </div>
+
+
+                <div class="benefit">
+                    <img
+                        src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=500&q=80"
+                        alt="Rewards"
+                    >
+                    <p>Earn &amp; Redeem across Stays, Dining, Spas and more</p>
+                </div>
+
+            </div>
+
+<button
+    type="button"
+    class="gold-btn join-btn"
+    id="joinBtn"
+    onclick="window.location.href='join.html'">
+    JOIN NOW
+</button>
+
+        </section>
+
+
+        <!-- VERTICAL LINE -->
+
+        <div class="divider"></div>
+
+
+        <!-- ================= RIGHT : LOGIN ================= -->
+
+        <section class="login-section">
+
+            <h1>ALREADY A MEMBER? LOGIN</h1>
+
+
+            <!-- LOGIN TABS -->
+
+            <div class="login-tabs">
+
+                <button class="login-tab active" data-type="mobile">
+                    MOBILE<br>NUMBER
+                </button>
+
+                <button class="login-tab" data-type="email">
+                    EMAIL<br>ADDRESS
+                </button>
+
+                <button class="login-tab" data-type="membership">
+                    MEMBERSHIP<br>NUMBER
+                </button>
+
+            </div>
+
+
+            <!-- LOGIN FORM -->
+
+            <div class="login-form">
+
+                <div class="input-row">
+
+                    <span class="india-flag">🇮🇳</span>
+
+                    <span class="country-code">+91⌄</span>
+
+                    <input
+                        id="loginInput"
+                        type="tel"
+                        placeholder="Enter your mobile number"
+                    >
+
+                </div>
+
+
+                <div class="agreement">
+
+                    <input
+                        type="checkbox"
+                        id="terms"
+                    >
+
+                    <label for="terms">
+                        By continuing you agree to our
+                        <a href="#">Terms of Use</a>
+                        and
+                        <a href="#">Privacy Policy</a>
+                    </label>
+
+                </div>
+
+<button
+    type="button"
+    class="gold-btn continue-btn"
+    id="continueBtn"
+    onclick="window.location.href='join.html'">
+    CONTINUE
+</button>
+
+            </div>
+
+
+          <!-- PARTNER LOGOS -->
+
+<div class="partner-logos">
+
+    <span class="partner-arblg">
+        <b>✦</b>
+        <strong>A R B L G</strong>
+        <small>HOTEL & RESORT</small>
+    </span>
+
+                <span>
+                    <b class="mini-neu">N</b> NEUPASS
+                </span>
+
+                <span>EPICURE</span>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <!-- CHAT -->
+
+    <button class="chat-button" id="chatButton">
+        <span>⌕</span>
+    </button>
+
+</div>
+
+
+<script src="login.js"></script>
+
+</body>
+</html>
